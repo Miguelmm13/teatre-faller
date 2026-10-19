@@ -141,12 +141,13 @@ def partir_linea_reparto(l):
 
 def reparto(lineas):
     try:
-        ini = next(i for i, l in enumerate(lineas) if re.match(r"^\**\s*(REPARTIMENT|REPARTO)\s*\**$", l, re.I))
+        ini = next(i for i, l in enumerate(lineas) if re.match(r"^\**\s*REPART[A-ZÀ-Ü]*\s*:?\s*\**$", l, re.I))
     except StopIteration:
         return None
     out, pendiente = [], None
     for l in lineas[ini + 1:]:
-        if re.match(r"^\(\s*\*\s*\)", l) or re.match(r"^\**\s*(SINOPSI|SINOPSIS|DURACI)", l, re.I) or campo([l], "duracion")[0]:
+        if (re.match(r"^\(\s*\*\s*\)", l) or re.match(r"^\**\s*(SINOPSI|SINOPSIS|DURACI)", l, re.I)
+                or re.match(r"^\**\s*[A-Za-zÀ-ÿ·]+(?: [A-Za-zÀ-ÿ·]+)?\s*\**\s*:", l)):
             break
         p, a, n = partir_linea_reparto(l)
         if p and not a:  # personaje y actor en celdas/líneas separadas
@@ -180,7 +181,7 @@ def fecha_publicacion(html_txt, lineas):
     if m:
         return m.group(1)
     for l in lineas:
-        m = re.search(r"\b(\d{2})/(\d{2})/(\d{4})\b", l)
+        m = re.search(r"(\d{2})/(\d{2})/(20\d{2})", l)
         if m:
             return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
     return None

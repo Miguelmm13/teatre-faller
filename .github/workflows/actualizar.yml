@@ -2,8 +2,10 @@ name: Actualizar datos
 
 on:
   schedule:
-    # 11:47 y 18:47 UTC = 13:47 y 20:47 en Valencia (horario de verano; una hora antes en invierno)
-    - cron: "47 11,18 * * *"
+    # Una revisión al día a las 10:00 de Valencia. GitHub usa hora UTC, así que se programa a las
+    # 08:00 y a las 09:00 UTC y el paso "¿Son las 10 en Valencia?" deja pasar solo la que toca
+    # (08:00 en horario de verano, 09:00 en invierno). GitHub puede retrasar unos minutos el arranque.
+    - cron: "0 8,9 * * *"
   workflow_dispatch:
     inputs:
       verificar:
@@ -28,21 +30,30 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - name: ¿Son las 10 en Valencia?
+        id: hora
+        run: |
+          h=$(TZ=Europe/Madrid date +%H)
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$h" = "10" ]; then echo "seguir=1" >> "$GITHUB_OUTPUT"; else echo "Son las $h en Valencia; esta ejecución no toca."; fi
+
       - uses: actions/checkout@v4
+        if: steps.hora.outputs.seguir == '1'
 
       - uses: actions/setup-python@v5
+        if: steps.hora.outputs.seguir == '1'
         with:
           python-version: "3.12"
 
       - name: Verificar el lector con las obras conocidas
-        if: github.event_name == 'push' || inputs.verificar
+        if: steps.hora.outputs.seguir == '1' && (github.event_name == 'push' || inputs.verificar)
         run: python scripts/actualizar.py --verificar
 
       - name: Buscar obras nuevas en fallas.com
-        if: github.event_name != 'push' && !inputs.verificar
+        if: steps.hora.outputs.seguir == '1' && github.event_name != 'push' && !inputs.verificar
         run: python scripts/actualizar.py
 
       - name: Guardar cambios
+        if: steps.hora.outputs.seguir == '1'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
