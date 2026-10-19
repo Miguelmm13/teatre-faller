@@ -1,0 +1,57 @@
+name: Actualizar datos
+
+on:
+  schedule:
+    # 11:47 y 18:47 UTC = 13:47 y 20:47 en Valencia (horario de verano; una hora antes en invierno)
+    - cron: "47 11,18 * * *"
+  workflow_dispatch:
+    inputs:
+      verificar:
+        description: "Releer las obras guardadas y comparar (no añade obras)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/actualizar.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verificar el lector con las obras conocidas
+        if: github.event_name == 'push' || inputs.verificar
+        run: python scripts/actualizar.py --verificar
+
+      - name: Buscar obras nuevas en fallas.com
+        if: github.event_name != 'push' && !inputs.verificar
+        run: python scripts/actualizar.py
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          [ -f verificacion.json ] && git add verificacion.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+            exit 0
+          fi
+          git commit -m "Datos: revisión automática $(date -u +%Y-%m-%d\ %H:%M) UTC"
+          git pull --rebase origin main
+          git push origin HEAD:main
