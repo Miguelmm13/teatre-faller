@@ -182,6 +182,21 @@ details.obra.mine summary { background: var(--gold-soft); }
 .nov { color: var(--velvet); font-weight: 700; }
 .ficha a { color: var(--velvet); font-weight: 600; }
 
+/* index */
+.idx-tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+#q { font: 500 15px var(--f-body); padding: 9px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); flex: 1 1 220px; min-width: 0; max-width: 360px; }
+#q:focus-visible { outline: 2px solid var(--velvet); outline-offset: 1px; }
+.idx-count { margin: 0; font: 400 12.5px var(--f-data); color: var(--muted); }
+.idx { columns: 2 340px; column-gap: 32px; }
+.idx-letter { font-family: var(--f-display); font-weight: 900; font-size: 26px; color: var(--velvet); margin: 14px 0 4px; break-after: avoid; line-height: 1; }
+.idx-letter:first-child { margin-top: 0; }
+.person { break-inside: avoid; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.person.mine .pname { color: var(--gold); }
+.pname { font-weight: 700; font-size: 14.5px; }
+.multi { font: 600 10.5px var(--f-body); letter-spacing: .05em; text-transform: uppercase; color: var(--velvet); background: var(--velvet-soft); padding: 1px 6px; border-radius: 3px; margin-left: 4px; vertical-align: 1px; }
+.person ul { list-style: none; margin: 2px 0 0; padding: 0; font-size: 13px; display: grid; gap: 1px; }
+.rol { font: 500 10.5px var(--f-data); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-right: 4px; }
+.rol-direccion, .rol-autor { color: var(--velvet); }
 .empty { border: 1px dashed var(--line); padding: 28px 20px; text-align: center; color: var(--muted); background: var(--surface); }
 .empty strong { color: var(--ink); display: block; font-size: 16px; margin-bottom: 4px; }
 footer { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 6px; max-width: 72ch; }
@@ -217,7 +232,7 @@ footer p { margin: 0; }
   </div>
 
   <footer>
-    <p>Datos tomados de las fichas que publica Junta Central Fallera en fallas.com (categoría Cultura). Un robot revisa la web dos veces al día y añade solo las notas con ficha de Teatre Faller; el resto de noticias se ignora.</p>
+    <p><strong>Cómo se actualiza:</strong> los datos se toman solo de las fichas oficiales que publica Junta Central Fallera en fallas.com. Un proceso automático las revisa cada día a las 13:47 y a las 20:47 y añade las obras nuevas. La página es de solo lectura: ningún visitante puede cambiar los datos; la fecha de «última revisión» de arriba indica la última comprobación.</p>
     <p>«Sin dato» significa que la ficha no publicó esa cifra; no cuenta como cero en medias ni rankings. Los actores se cuentan como personas únicas: quien hace varios papeles cuenta una vez.</p>
   </footer>
 </div>
@@ -235,6 +250,8 @@ footer p { margin: 0; }
   let meta = null;
   let cat = "Todas";
   let mine = "";
+  let q = "";
+  let rol = "todos";
   try { const s = localStorage.getItem("tf-mine"); if (s) mine = s; } catch (e) {}
   try { const c = localStorage.getItem("tf-cat"); if (c) cat = c; } catch (e) {}
 
@@ -449,7 +466,7 @@ footer p { margin: 0; }
 
       <section class="act">
         <div class="act-head"><span class="eyebrow">Acto I</span><h2>Quién llena más el patio de butacas</h2>
-          <p>Espectadores de cada función. Fíjate en el día: un domingo o festivo no compite en igualdad con un martes o miércoles.</p></div>
+          <p>Espectadores de cada función y su porcentaje sobre el total.</p></div>
         ${rankList(list, (r) => r.asistentes, { showMissing: true, share: list.filter((r) => has(r.asistentes)).reduce((s, r) => s + r.asistentes, 0) })}
       </section>
 
@@ -499,17 +516,82 @@ footer p { margin: 0; }
         <div class="act-head"><span class="eyebrow">Programa</span><h2>Todas las funciones</h2><p>Toca una obra para ver su ficha y su reparto. Las más recientes, arriba.</p></div>
         ${season(list)}
       </section>
+
+      <section class="act" id="indice">
+        <div class="act-head"><span class="eyebrow">Índice</span><h2>Actores, dirección y autoría</h2>
+          <p>Todas las personas que aparecen en las fichas${cat !== "Todas" ? " de " + esc(cat) : ""}, por orden alfabético. Busca un nombre, un personaje, una obra o una falla.</p></div>
+        <div class="idx-tools">
+          <input id="q" type="search" placeholder="Buscar…" autocomplete="off" value="${esc(q)}" aria-label="Buscar en el índice">
+          <div class="filters" role="group" aria-label="Filtrar por función">
+            ${[["todos","Todos"],["actor","Actores"],["direccion","Dirección"],["autor","Autoría"]].map(([k, l]) => `<button class="chip" type="button" data-rol="${k}" aria-pressed="${rol === k}">${l}</button>`).join("")}
+          </div>
+        </div>
+        <div id="idx-list">${indexList(list)}</div>
+      </section>
     </div>`;
+  }
+
+  const ROL_LABEL = { actor: "Actor/actriz", direccion: "Dirección", autor: "Autoría" };
+  const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+  function splitNames(s) {
+    return String(s || "").replace(/\(.*?\)/g, "").split(/\s+(?:i|y|&)\s+|,\s*|\s*\/\s*/)
+      .map((x) => x.trim()).filter((x) => x && !/^col·?lectiu$|^colectivo$/i.test(x));
+  }
+  function buildPeople(list) {
+    const people = new Map();
+    const add = (name, e) => {
+      const k = norm(name); if (!k) return;
+      if (!people.has(k)) people.set(k, { name: name.trim(), roles: new Set(), entries: [] });
+      const p = people.get(k); p.roles.add(e.rol); p.entries.push(e);
+    };
+    list.forEach((r) => {
+      (Array.isArray(r.reparto) ? r.reparto : []).forEach((c) => add(c.a, { rol: "actor", r, personaje: c.p, novell: !!c.n }));
+      splitNames(r.direccion).forEach((n) => add(n, { rol: "direccion", r }));
+      splitNames(r.autor).forEach((n) => add(n, { rol: "autor", r }));
+    });
+    return [...people.values()].sort((a, b) => a.name.localeCompare(b.name, "es"));
+  }
+  function indexList(list) {
+    const all = buildPeople(list);
+    const nq = norm(q);
+    const shown = all.filter((p) => (rol === "todos" || p.roles.has(rol)) &&
+      (!nq || norm(p.name).includes(nq) || p.entries.some((e) => norm(e.personaje).includes(nq) || norm(e.r.obra).includes(nq) || norm(e.r.comision).includes(nq))));
+    if (!shown.length) return `<p class="muted">Nadie coincide con «${esc(q)}».</p>`;
+    const counts = { actor: 0, direccion: 0, autor: 0 };
+    all.forEach((p) => p.roles.forEach((r) => counts[r]++));
+    let html = `<p class="idx-count">${shown.length} persona${shown.length > 1 ? "s" : ""} · ${counts.actor} en escena, ${counts.direccion} en dirección, ${counts.autor} en autoría</p><div class="idx">`;
+    let letter = "";
+    shown.forEach((p) => {
+      const L = norm(p.name).charAt(0).toUpperCase();
+      if (L !== letter) { letter = L; html += `<h3 class="idx-letter">${esc(L)}</h3>`; }
+      const obras = new Set(p.entries.map((e) => e.r.id || e.r.obra));
+      html += `<div class="person ${p.entries.some((e) => isMine(e.r)) ? "mine" : ""}">
+        <div class="pname">${esc(p.name)}${obras.size > 1 ? ` <span class="multi">${obras.size} obras</span>` : ""}</div>
+        <ul>${p.entries.map((e) => `<li><span class="rol rol-${e.rol}">${ROL_LABEL[e.rol]}</span> ‘${esc(e.r.obra)}’ · ${esc(e.r.comision)}${e.personaje ? ` <span class="muted">— ${esc(e.personaje)}</span>` : ""}${e.novell ? ' <span class="nov" title="Novel">*</span>' : ""}</li>`).join("")}</ul>
+      </div>`;
+    });
+    return html + "</div>";
   }
 
   function renderStatus() {
     const el = $("#status");
-    if (!meta) { el.innerHTML = `<b>${rows.length}</b> fichas`; return; }
-    const t = meta.ultimaRevision ? new Date(meta.ultimaRevision) : null;
-    el.innerHTML = `<b>${rows.length}</b> fichas · revisado ${t ? t.toLocaleString("es-ES", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "–"}`;
+    const t = meta && meta.ultimaRevision ? new Date(meta.ultimaRevision) : null;
+    el.innerHTML = `<b>${rows.length}</b> obras · actualización automática${t ? ` · última revisión <b>${t.toLocaleString("es-ES", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Madrid" })}</b>` : ""}`;
   }
 
+  document.addEventListener("input", (e) => {
+    if (e.target.id !== "q") return;
+    q = e.target.value;
+    $("#idx-list").innerHTML = indexList(filtered());
+  });
   document.addEventListener("click", (e) => {
+    const rb = e.target.closest("[data-rol]");
+    if (rb) {
+      rol = rb.dataset.rol;
+      document.querySelectorAll("[data-rol]").forEach((x) => x.setAttribute("aria-pressed", x === rb));
+      $("#idx-list").innerHTML = indexList(filtered());
+      return;
+    }
     const b = e.target.closest("[data-cat]");
     if (!b) return;
     cat = b.dataset.cat;
