@@ -1,0 +1,108 @@
+[
+ {
+  "id": "eatre-faller-benidorm-mai-dorm-l-obra-d-arxiduc-carles-music-gomis",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-09-30"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-alejandro-i-ana-lobra-de-ruben-dario-fra-lluis-colomer",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-14"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-de-remat-lobra-de-josep-soto-mico-sindic-mocholi",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-08"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-general-pando-serrano-flores-presenta-a-la-cua",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-01"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-golfus-de-roma-lobra-de-placa-lope-de-vega",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-13"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-la-demama-lobra-de-mestre-aguilar-maties-perello",
+  "ok": false,
+  "diferencias": {
+   "obra": {
+    "lector": "La demanà",
+    "guardado": "La demamà"
+   },
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-12"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-negoci-arriscat-lobra-de-doctor-oloriz-arquebisbe-fabian-i-fuero",
+  "ok": false,
+  "diferencias": {
+   "comision": {
+    "lector": "Doctor Olóriz-Arzobispo Fabián y Fuero",
+    "guardado": "Doctor Olóriz-Arquebisbe Fabián i Fuero"
+   },
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-09-28"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-transtlantic-13-lobra-de-duc-de-gaeta-la-pobla-de-farnals",
+  "error": "no reconocida como ficha"
+ },
+ {
+  "id": "teatre-faller-tretze-cabaret-lobra-dactor-mora-av-constitucio",
+  "ok": false,
+  "diferencias": {
+   "comision": {
+    "lector": "Actor Mora-Av. Constitución",
+    "guardado": "Actor Mora-Av. Constitució"
+   },
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-09-23"
+   }
+  }
+ },
+ {
+  "id": "teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo",
+  "ok": false,
+  "diferencias": {
+   "publicado": {
+    "lector": null,
+    "guardado": "2026-10-07"
+   }
+  }
+ }
+]
