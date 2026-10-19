@@ -1,0 +1,625 @@
+{
+ "meta": {
+  "ultimaRevision": "2026-10-19T13:54:27Z",
+  "ignoradas": [
+   "bases-concurse-de-presentacions"
+  ]
+ },
+ "obras": [
+  {
+   "actores": 3,
+   "asistentes": 135,
+   "autor": "Rafael Soler Sherpa",
+   "categoria": "Tercera",
+   "comision": "Arxiduc Carles-Músic Gomis",
+   "direccion": "Rafael Soler Sherpa",
+   "duracion": 73,
+   "fecha": "2026-09-29",
+   "hora": "21:30",
+   "inedita": true,
+   "novells": 0,
+   "obra": "Benidorm mai dorm",
+   "publicado": "2026-09-30",
+   "reparto": [
+    {
+     "a": "Juan Céspedes Garrido",
+     "n": false,
+     "p": "Carles"
+    },
+    {
+     "a": "Yaiza Martínez Crespo",
+     "n": false,
+     "p": "Dorothy"
+    },
+    {
+     "a": "Iván José Muñoz Pardo",
+     "n": false,
+     "p": "Francesc"
+    }
+   ],
+   "url": "https://fallas.com/va/eatre-faller-benidorm-mai-dorm-l-obra-d-arxiduc-carles-music-gomis/",
+   "id": "eatre-faller-benidorm-mai-dorm-l-obra-d-arxiduc-carles-music-gomis"
+  },
+  {
+   "actores": 12,
+   "asistentes": 57,
+   "autor": "Juan Mayorga i Juan Cavestany (adaptació: Rd360 Teatre)",
+   "categoria": "Tercera",
+   "comision": "Rubén Darío-Fra Lluís Colomer",
+   "direccion": "Lola Soler Piqueres i Miguel Ángel León",
+   "duracion": 62,
+   "fecha": "2026-10-13",
+   "hora": "21:30",
+   "inedita": false,
+   "novells": 1,
+   "obra": "Alejandro i Ana",
+   "publicado": "2026-10-14",
+   "reparto": [
+    {
+     "a": "Iván Sánchez Abreu",
+     "n": false,
+     "p": "Bermúdez / Poeta"
+    },
+    {
+     "a": "Luis Roig",
+     "n": false,
+     "p": "Volpone / Servei d'Intel·ligència 2"
+    },
+    {
+     "a": "Luis Galdón De Domingo",
+     "n": false,
+     "p": "Servei d'Intel·ligència 1"
+    },
+    {
+     "a": "Vicent Garcia",
+     "n": false,
+     "p": "Candidat 1"
+    },
+    {
+     "a": "Daniel Fita Nieves",
+     "n": false,
+     "p": "Candidat 2 / Ministre"
+    },
+    {
+     "a": "Lourdes Martí Besa",
+     "n": false,
+     "p": "Mrs. Brown"
+    },
+    {
+     "a": "Diana Bolea Gómez",
+     "n": false,
+     "p": "Empresària 1"
+    },
+    {
+     "a": "Silvia Esteve Torrent",
+     "n": false,
+     "p": "Empresària 2"
+    },
+    {
+     "a": "Irene Galdón Álvarez",
+     "n": false,
+     "p": "Hermosa"
+    },
+    {
+     "a": "Anna Del Moral Soler",
+     "n": true,
+     "p": "Bella"
+    },
+    {
+     "a": "Aitana Lou Guzmán Pérez",
+     "n": false,
+     "p": "Petra"
+    },
+    {
+     "a": "Paula Martí Rocafull",
+     "n": false,
+     "p": "President"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-alejandro-i-ana-lobra-de-ruben-dario-fra-lluis-colomer/",
+   "id": "teatre-faller-alejandro-i-ana-lobra-de-ruben-dario-fra-lluis-colomer"
+  },
+  {
+   "actores": 11,
+   "asistentes": 145,
+   "autor": "Ximo Hernández",
+   "categoria": "Tercera",
+   "comision": "Josep Soto Micó-Síndic Mocholí",
+   "direccion": "Boro Puchades i Marga Romero",
+   "duracion": 75,
+   "fecha": "2026-10-07",
+   "hora": "21:30",
+   "inedita": false,
+   "novells": 4,
+   "obra": "De remat",
+   "publicado": "2026-10-08",
+   "reparto": [
+    {
+     "a": "María Ibáñez Atienza",
+     "n": false,
+     "p": "Inspectora"
+    },
+    {
+     "a": "Irene García Puchades",
+     "n": false,
+     "p": "Sonsoles"
+    },
+    {
+     "a": "José Salvador Alonso Martínez",
+     "n": false,
+     "p": "Doctor Gómez"
+    },
+    {
+     "a": "Alexander Castaño Santos",
+     "n": true,
+     "p": "Tonyo"
+    },
+    {
+     "a": "Nuria Saiz Chisbert",
+     "n": false,
+     "p": "Sara"
+    },
+    {
+     "a": "Mireia Alba Márquez",
+     "n": true,
+     "p": "Nébula"
+    },
+    {
+     "a": "Margarita Romero Lleó",
+     "n": false,
+     "p": "Maca"
+    },
+    {
+     "a": "Eloisa Alapont Morales",
+     "n": false,
+     "p": "Herminia"
+    },
+    {
+     "a": "Gemma Sanmartín Peris",
+     "n": false,
+     "p": "Marisol"
+    },
+    {
+     "a": "Amelia Matallín Sahuquillo",
+     "n": true,
+     "p": "Blanca"
+    },
+    {
+     "a": "Sonia Ductor García",
+     "n": true,
+     "p": "Mirta"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-de-remat-lobra-de-josep-soto-mico-sindic-mocholi/",
+   "id": "teatre-faller-de-remat-lobra-de-josep-soto-mico-sindic-mocholi"
+  },
+  {
+   "actores": 11,
+   "asistentes": 73,
+   "autor": "Manuel Andrés Zarapico",
+   "categoria": "Tercera",
+   "comision": "General Pando-Serrano Flores",
+   "direccion": "Víctor Blanco Montagud",
+   "duracion": 70,
+   "fecha": "2026-09-30",
+   "hora": "21:30",
+   "inedita": false,
+   "novells": 0,
+   "obra": "A la cua",
+   "publicado": "2026-10-01",
+   "reparto": [
+    {
+     "a": "Armando Palomares Llongo",
+     "n": false,
+     "p": "Jubilat"
+    },
+    {
+     "a": "Pablo Sendra Vidal",
+     "n": false,
+     "p": "Jove – Àngel"
+    },
+    {
+     "a": "Ana Castillejo López",
+     "n": false,
+     "p": "Iaia – Soltera – Caixera"
+    },
+    {
+     "a": "Estefanía Alcorisa Rodríguez",
+     "n": false,
+     "p": "Gòtica"
+    },
+    {
+     "a": "Víctor Blanco Montagud",
+     "n": false,
+     "p": "Cura"
+    },
+    {
+     "a": "Inmaculada Alberola Real",
+     "n": false,
+     "p": "Casada"
+    },
+    {
+     "a": "Francisco Gordillo Guerrero",
+     "n": false,
+     "p": "Casado"
+    },
+    {
+     "a": "Carlos Sancho Vives",
+     "n": false,
+     "p": "Jove – Jubilat 2"
+    },
+    {
+     "a": "Claudia Campo",
+     "n": false,
+     "p": "Dimoni"
+    },
+    {
+     "a": "Javier Clemente García",
+     "n": false,
+     "p": "Espontani"
+    },
+    {
+     "a": "Rocío Gómez Ramírez Magenti",
+     "n": false,
+     "p": "Xica"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-general-pando-serrano-flores-presenta-a-la-cua/",
+   "id": "teatre-faller-general-pando-serrano-flores-presenta-a-la-cua"
+  },
+  {
+   "actores": 12,
+   "asistentes": 312,
+   "autor": "Jose Vicente Marco Ramírez",
+   "categoria": "Tercera",
+   "comision": "Plaça Lope de Vega",
+   "direccion": "Jose Vicente Marco Ramírez",
+   "duracion": 95,
+   "fecha": "2026-10-12",
+   "hora": "21:30",
+   "inedita": false,
+   "novells": 0,
+   "obra": "Golfus de Roma",
+   "publicado": "2026-10-13",
+   "reparto": [
+    {
+     "a": "Miguel Marco Mesas",
+     "n": false,
+     "p": "Pseudulus"
+    },
+    {
+     "a": "Javier Bellver Pérez",
+     "n": false,
+     "p": "Hysterium"
+    },
+    {
+     "a": "José Vicente García Gómez",
+     "n": false,
+     "p": "Senex"
+    },
+    {
+     "a": "Antonio Fagoaga Ballester",
+     "n": false,
+     "p": "Marco Licus"
+    },
+    {
+     "a": "Antonio Marcos Hervás Abril",
+     "n": false,
+     "p": "Erronius"
+    },
+    {
+     "a": "Santiago Gui Francesch",
+     "n": false,
+     "p": "Eros"
+    },
+    {
+     "a": "Fernando González Aller",
+     "n": false,
+     "p": "Miles Gloriosus"
+    },
+    {
+     "a": "Rosa María Tomás Alegre",
+     "n": false,
+     "p": "Licula"
+    },
+    {
+     "a": "Mª Carmen González Huerta",
+     "n": false,
+     "p": "Fertula"
+    },
+    {
+     "a": "María Magdalena Marco Mesas",
+     "n": false,
+     "p": "Filia"
+    },
+    {
+     "a": "Susana Bayarri Zarandieta",
+     "n": false,
+     "p": "Gimnasia"
+    },
+    {
+     "a": "Mª Amparo Cuesta Falomir",
+     "n": false,
+     "p": "Milesia"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-golfus-de-roma-lobra-de-placa-lope-de-vega/",
+   "id": "teatre-faller-golfus-de-roma-lobra-de-placa-lope-de-vega"
+  },
+  {
+   "actores": 7,
+   "asistentes": null,
+   "autor": "Jesús Raga Perales",
+   "categoria": "Sainet",
+   "comision": "Mestre Aguilar-Maties Perelló",
+   "direccion": "Amadeo Sánchez Ruano i Conchin Payá García",
+   "duracion": null,
+   "fecha": "2026-10-11",
+   "hora": "12:30",
+   "inedita": false,
+   "novells": 1,
+   "obra": "La demamà",
+   "publicado": "2026-10-12",
+   "reparto": [
+    {
+     "a": "Amadeo Sánchez Ruano",
+     "n": false,
+     "p": "Vicent"
+    },
+    {
+     "a": "Begoña Albert Navarro",
+     "n": false,
+     "p": "Bego"
+    },
+    {
+     "a": "Joan Antoni Marrahí Pérez",
+     "n": false,
+     "p": "Joan"
+    },
+    {
+     "a": "Mª Amparo Giménez Casañ",
+     "n": false,
+     "p": "Amparo"
+    },
+    {
+     "a": "Pablo Gramage Iglesias",
+     "n": false,
+     "p": "Don Pablo"
+    },
+    {
+     "a": "Rocío Gisbert Giménez",
+     "n": false,
+     "p": "Ro"
+    },
+    {
+     "a": "Mª Amparo Gisbert Giménez",
+     "n": true,
+     "p": "Rorro"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-la-demama-lobra-de-mestre-aguilar-maties-perello/",
+   "id": "teatre-faller-la-demama-lobra-de-mestre-aguilar-maties-perello"
+  },
+  {
+   "actores": 2,
+   "asistentes": 120,
+   "autor": "Col·lectiu",
+   "categoria": "Tercera",
+   "comision": "Doctor Olóriz-Arquebisbe Fabián i Fuero",
+   "direccion": "Sito Sanchis",
+   "duracion": 70,
+   "fecha": "2026-09-23",
+   "hora": "21:30",
+   "inedita": true,
+   "novells": 1,
+   "obra": "Negoci arriscat",
+   "publicado": "2026-09-28",
+   "reparto": [
+    {
+     "a": "Clara Alias López",
+     "n": true,
+     "p": "Antonia"
+    },
+    {
+     "a": "Mª Amparo Piera",
+     "n": false,
+     "p": "Directora"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-negoci-arriscat-lobra-de-doctor-oloriz-arquebisbe-fabian-i-fuero/",
+   "id": "teatre-faller-negoci-arriscat-lobra-de-doctor-oloriz-arquebisbe-fabian-i-fuero"
+  },
+  {
+   "actores": 17,
+   "asistentes": 145,
+   "autor": "Hernán Mir Serrano",
+   "categoria": "Sainet",
+   "comision": "Duc de Gaeta-La Pobla de Farnals",
+   "direccion": "Hernán Mir Serrano i Paqui Olba Torrent",
+   "duracion": 44,
+   "fecha": "2026-10-11",
+   "hora": "10:30",
+   "inedita": true,
+   "novells": 3,
+   "obra": "Transtlàntic 13",
+   "publicado": "2026-10-11",
+   "reparto": [
+    {
+     "a": "Marco E. Soriano Soriano",
+     "n": false,
+     "p": "Batiste"
+    },
+    {
+     "a": "Eugenio Escalera García",
+     "n": false,
+     "p": "Nofre"
+    },
+    {
+     "a": "Alba Casas Sanz",
+     "n": false,
+     "p": "Coral"
+    },
+    {
+     "a": "Natalia Mas Diana",
+     "n": false,
+     "p": "Vicentica"
+    },
+    {
+     "a": "Zulima Sanz Melero",
+     "n": false,
+     "p": "Emilin"
+    },
+    {
+     "a": "Ferran Llopis Llopis",
+     "n": true,
+     "p": "Harkaitz"
+    },
+    {
+     "a": "Ana Belén Sastrisques Gálvez",
+     "n": false,
+     "p": "Elvira"
+    },
+    {
+     "a": "Macarena E. Izquierdo Gutiérrez",
+     "n": false,
+     "p": "Mensin"
+    },
+    {
+     "a": "Mª José Úbeda García",
+     "n": false,
+     "p": "Pepa"
+    },
+    {
+     "a": "Abril Tomás Rodríguez",
+     "n": true,
+     "p": "Sofía"
+    },
+    {
+     "a": "Irene Mir Olba",
+     "n": false,
+     "p": "Laura"
+    },
+    {
+     "a": "Aida Marín Sanz",
+     "n": false,
+     "p": "Claudia"
+    },
+    {
+     "a": "Lidia Casas Sanz",
+     "n": false,
+     "p": "Paula"
+    },
+    {
+     "a": "Marina Alfonso Gimeno",
+     "n": true,
+     "p": "Aurora"
+    },
+    {
+     "a": "Jose Vicente Tomas Navarro",
+     "n": false,
+     "p": "Pere"
+    },
+    {
+     "a": "Héctor Jiménez Portillo",
+     "n": false,
+     "p": "Ramón"
+    },
+    {
+     "a": "Marcos Soriano Vidal",
+     "n": false,
+     "p": "Dylan Daniel"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-transtlantic-13-lobra-de-duc-de-gaeta-la-pobla-de-farnals/",
+   "id": "teatre-faller-transtlantic-13-lobra-de-duc-de-gaeta-la-pobla-de-farnals"
+  },
+  {
+   "actores": 9,
+   "asistentes": 128,
+   "autor": "Francisco Sarro Oltra",
+   "categoria": "Tercera",
+   "comision": "Actor Mora-Av. Constitució",
+   "direccion": "Rubén Gómez García",
+   "duracion": 65,
+   "fecha": "2026-09-22",
+   "hora": "21:30",
+   "inedita": true,
+   "novells": 1,
+   "obra": "Tretze cabaret",
+   "publicado": "2026-09-23",
+   "reparto": [
+    {
+     "a": "David Torres Oriola",
+     "n": false,
+     "p": "Mestre de cerimònies"
+    },
+    {
+     "a": "Águeda Torres de Toro",
+     "n": true,
+     "p": "Filla"
+    },
+    {
+     "a": "Ignacio Picazo Serra",
+     "n": false,
+     "p": "Artista"
+    },
+    {
+     "a": "Olaya Martínez Gil",
+     "n": false,
+     "p": "Cabaretera"
+    },
+    {
+     "a": "Vicente Terrones Martí",
+     "n": false,
+     "p": "Cambrer"
+    },
+    {
+     "a": "Dolores Ávila Martínez",
+     "n": false,
+     "p": "Modista"
+    },
+    {
+     "a": "Lorena Gómez Duval",
+     "n": false,
+     "p": "Guardarroba"
+    },
+    {
+     "a": "Lucía Martínez Gil",
+     "n": false,
+     "p": "Ama"
+    },
+    {
+     "a": "Jessica Vegas Tárraga",
+     "n": false,
+     "p": "Folklòrica"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-tretze-cabaret-lobra-dactor-mora-av-constitucio/",
+   "id": "teatre-faller-tretze-cabaret-lobra-dactor-mora-av-constitucio"
+  },
+  {
+   "actores": 1,
+   "asistentes": 68,
+   "autor": "Carles Recio Alfaro",
+   "categoria": "Tercera",
+   "comision": "Sapadors-Vicent Lleó",
+   "direccion": "Guillermo Eros Recio Peiró",
+   "duracion": 65,
+   "fecha": "2026-10-06",
+   "hora": "21:30",
+   "inedita": true,
+   "novells": 0,
+   "obra": "València, el Regne del Sant Grial",
+   "publicado": "2026-10-07",
+   "reparto": [
+    {
+     "a": "Guillermo Eros Recio Peiró",
+     "n": false,
+     "p": "Perceval"
+    }
+   ],
+   "url": "https://fallas.com/va/teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo/",
+   "id": "teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo"
+  }
+ ]
+}

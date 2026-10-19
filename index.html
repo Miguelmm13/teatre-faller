@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Rankings de espectadores, elencos y calendario del concurso de teatro de Junta Central Fallera. Se actualiza solo con las fichas de fallas.com.">
+<meta property="og:title" content="Teatre Faller 2026-27">
+<meta property="og:description" content="Quién lleva más público, elencos, cuotas y calendario del concurso de teatro de JCF.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Teatre Faller 2026-27</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: playbill — marquee header, our falla's ticket, then rankings stacked as "acts", full season table last */
+:root {
+  --bg: #f6f4f2;
+  --surface: #ffffff;
+  --ink: #1d1418;
+  --muted: #6e6168;
+  --line: #e4dcdf;
+  --velvet: #8c1d3b;      /* accent: stage velvet */
+  --velvet-soft: #f3e3e8;
+  --velvet-2: #b44a66;
+  --gold: #b9811b;        /* highlight: our falla */
+  --gold-soft: #f8ecd3;
+  --bar: #c9b8bf;
+  --sainet: #2f6f73;
+  --tercera: #8c1d3b;
+  --segona: #5b4a9b;
+  --primera: #b25d1c;
+  --altres: #6b6b6b;
+  --f-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --f-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141013; --surface: #1d171b; --ink: #f2eaed; --muted: #a8979f; --line: #34292f;
+    --velvet: #e0577a; --velvet-soft: #3a1c26; --velvet-2: #a83a58; --gold: #e3ae4b; --gold-soft: #3a2c12; --bar: #4f4148;
+    --sainet: #5fb3b8; --tercera: #e0577a; --segona: #9d8ce0; --primera: #e39250; --altres: #9a9a9a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141013; --surface: #1d171b; --ink: #f2eaed; --muted: #a8979f; --line: #34292f;
+  --velvet: #e0577a; --velvet-soft: #3a1c26; --velvet-2: #a83a58; --gold: #e3ae4b; --gold-soft: #3a2c12; --bar: #4f4148;
+  --sainet: #5fb3b8; --tercera: #e0577a; --segona: #9d8ce0; --primera: #e39250; --altres: #9a9a9a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 20px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px; }
+h1, h2 { font-family: var(--f-display); text-transform: uppercase; letter-spacing: .01em; margin: 0; text-wrap: balance; line-height: .95; }
+h1 { font-size: clamp(44px, 11vw, 84px); font-weight: 900; }
+h2 { font-size: clamp(26px, 6vw, 34px); font-weight: 800; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--velvet); }
+.muted { color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--f-data); }
+
+/* header */
+header { display: grid; gap: 14px; padding-bottom: 18px; border-bottom: 3px double var(--ink); }
+.head-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+.status { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.status b { color: var(--ink); font-weight: 500; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 0; border: 1px solid var(--line); background: var(--surface); }
+.stat { padding: 12px 14px; display: grid; gap: 2px; border-left: 1px solid var(--line); min-width: 0; }
+.stat:first-child { border-left: 0; }
+.stat .v { font-family: var(--f-display); font-weight: 800; font-size: clamp(28px, 7vw, 40px); line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .k { font-size: 12px; color: var(--muted); }
+@media (max-width: 560px) {
+  .stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .stat:nth-child(3) { border-left: 0; }
+  .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip { font: 600 13px var(--f-body); padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip:focus-visible, select:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--velvet); outline-offset: 2px; }
+.mine-pick { margin-left: auto; display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
+select { font: 500 13px var(--f-body); padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); max-width: 210px; }
+@media (max-width: 560px) { .mine-pick { margin-left: 0; width: 100%; } select { flex: 1; max-width: none; } }
+
+/* ticket: our falla */
+.ticket { position: relative; background: var(--gold-soft); border: 1px solid var(--gold); border-radius: 4px; padding: 18px 20px; display: grid; gap: 14px; }
+.ticket::before, .ticket::after { content: ""; position: absolute; top: 50%; width: 18px; height: 18px; margin-top: -9px; border-radius: 50%; background: var(--bg); border: 1px solid var(--gold); }
+.ticket::before { left: -10px; clip-path: inset(0 0 0 50%); }
+.ticket::after { right: -10px; clip-path: inset(0 50% 0 0); }
+.ticket .eyebrow { color: var(--gold); }
+.ticket-title { font-family: var(--f-display); font-weight: 900; font-size: clamp(30px, 8vw, 46px); text-transform: uppercase; line-height: .95; }
+.ticket-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 12px; border-top: 1px dashed var(--gold); padding-top: 14px; }
+@media (max-width: 760px) { .ticket-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+.rk .val .share { display: block; font: 500 11px var(--f-data); color: var(--muted); letter-spacing: 0; }
+.rk.mine .val .share { color: var(--gold); }
+.quota { display: flex; height: 34px; border-radius: 3px; overflow: hidden; background: var(--line); gap: 2px; }
+.seg { display: flex; align-items: center; justify-content: center; min-width: 2px; color: #fff; }
+.seg b { font: 600 11.5px var(--f-data); }
+.kpi-line { margin: 0; font-size: 14.5px; max-width: 64ch; }
+.kpi-line b { font-family: var(--f-display); font-size: 20px; font-weight: 800; color: var(--velvet); }
+.sharelist { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; columns: 2 300px; column-gap: 28px; }
+.sharelist li { display: grid; grid-template-columns: 22px minmax(0,1fr) auto 70px; gap: 8px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--line); break-inside: avoid; font-size: 14px; }
+.sharelist .pos { font: 400 12px var(--f-data); color: var(--muted); text-align: right; }
+.sharelist .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sharelist .pc { font-family: var(--f-display); font-weight: 800; font-size: 19px; font-variant-numeric: tabular-nums; }
+.sharelist .vs { font: 500 11.5px var(--f-data); text-align: right; }
+.sharelist li.mine .nm, .sharelist li.mine .pc { color: var(--gold); font-weight: 700; }
+.tk { display: grid; gap: 2px; min-width: 0; }
+.tk .v { font-family: var(--f-display); font-weight: 800; font-size: 32px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tk .k { font-size: 12px; color: var(--muted); }
+.tk .s { font-size: 12px; font-family: var(--f-data); }
+.up { color: #2c7a43; } .down { color: var(--velvet); }
+:root[data-theme="dark"] .up { color: #6bcf8a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .up { color: #6bcf8a; } }
+@media (max-width: 560px) { .ticket-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .ticket-grid .tk:first-child { grid-column: 1 / -1; } }
+
+/* acts */
+section.act { display: grid; gap: 14px; }
+.act-head { display: grid; gap: 4px; }
+.act-head p { margin: 0; max-width: 62ch; color: var(--muted); font-size: 14px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+@media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+
+/* bar ranking */
+.rank { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.rk { display: grid; grid-template-columns: 26px minmax(0,1fr) auto; gap: 10px; align-items: center; }
+.rk .pos { font-family: var(--f-data); font-size: 12px; color: var(--muted); text-align: right; }
+.rk .body { display: grid; gap: 3px; min-width: 0; }
+.rk .name { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rk .meta { font-size: 11.5px; color: var(--muted); display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.rk .track { height: 8px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.rk .fill { height: 100%; background: var(--bar); border-radius: 2px; }
+.rk .val { font-family: var(--f-display); font-weight: 800; font-size: 22px; font-variant-numeric: tabular-nums; min-width: 3ch; text-align: right; }
+.rk.mine .name { color: var(--gold); }
+.rk.mine .fill { background: var(--gold); }
+.rk.mine .val { color: var(--gold); }
+.rk.nodata .val { font-size: 13px; font-family: var(--f-data); font-weight: 400; color: var(--muted); }
+.tag { font: 600 10.5px var(--f-body); letter-spacing: .06em; text-transform: uppercase; padding: 1px 6px; border-radius: 3px; color: #fff; background: var(--altres); }
+.day { font-family: var(--f-data); font-size: 11px; }
+.fest { color: var(--velvet); font-weight: 600; }
+
+/* timeline */
+.timeline-box { background: var(--surface); border: 1px solid var(--line); overflow-x: auto; }
+.timeline-box svg { display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+
+/* averages table */
+.avg { width: 100%; border-collapse: collapse; font-size: 14px; }
+.avg th, .avg td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+.avg th { font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.avg td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.avg th.n { text-align: right; }
+
+/* season list */
+.season { display: grid; gap: 0; border-top: 1px solid var(--ink); }
+details.obra { border-bottom: 1px solid var(--line); }
+details.obra summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 64px minmax(0,1fr) auto; gap: 12px; align-items: center; padding: 12px 4px; }
+details.obra summary::-webkit-details-marker { display: none; }
+details.obra.mine summary { background: var(--gold-soft); }
+.date { font-family: var(--f-data); font-size: 12px; line-height: 1.25; color: var(--muted); }
+.date b { display: block; font-family: var(--f-display); font-size: 24px; font-weight: 800; color: var(--ink); line-height: 1; }
+.obra-t { min-width: 0; display: grid; gap: 2px; }
+.obra-t .t { font-weight: 700; font-size: 15px; }
+.obra-t .c { font-size: 13px; color: var(--muted); }
+.obra-n { text-align: right; display: grid; gap: 1px; }
+.obra-n .v { font-family: var(--f-display); font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1; }
+.obra-n .k { font-size: 11px; color: var(--muted); }
+.ficha { padding: 4px 4px 18px 80px; display: grid; gap: 12px; font-size: 14px; }
+@media (max-width: 560px) { .ficha { padding-left: 4px; } }
+.ficha dl { display: grid; grid-template-columns: max-content minmax(0,1fr); gap: 4px 14px; margin: 0; }
+.ficha dt { color: var(--muted); font-size: 12.5px; }
+.ficha dd { margin: 0; }
+.cast { columns: 2 220px; column-gap: 24px; margin: 0; padding: 0; list-style: none; font-size: 13.5px; }
+.cast li { break-inside: avoid; padding: 3px 0; border-bottom: 1px dotted var(--line); display: flex; gap: 8px; justify-content: space-between; }
+.cast .p { font-family: var(--f-data); font-size: 11px; text-transform: uppercase; color: var(--muted); text-align: right; }
+.nov { color: var(--velvet); font-weight: 700; }
+.ficha a { color: var(--velvet); font-weight: 600; }
+
+.empty { border: 1px dashed var(--line); padding: 28px 20px; text-align: center; color: var(--muted); background: var(--surface); }
+.empty strong { color: var(--ink); display: block; font-size: 16px; margin-bottom: 4px; }
+footer { font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 6px; max-width: 72ch; }
+footer p { margin: 0; }
+@media (prefers-reduced-motion: no-preference) { .rk .fill { transition: width .5s ease; } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div class="head-row">
+      <span class="eyebrow">Concurs de Teatre en Valencià · JCF</span>
+      <span class="status" id="status">Conectando con los datos…</span>
+    </div>
+    <h1>Teatre Faller<br>2026-27</h1>
+    <div class="stats" id="stats">
+      <div class="stat"><span class="v">–</span><span class="k">obras representadas</span></div>
+      <div class="stat"><span class="v">–</span><span class="k">espectadores en total</span></div>
+      <div class="stat"><span class="v">–</span><span class="k">media por función</span></div>
+      <div class="stat"><span class="v">–</span><span class="k">actores y actrices</span></div>
+    </div>
+  </header>
+
+  <div class="filters" role="group" aria-label="Filtrar por categoría" id="filters"></div>
+
+  <div id="main">
+    <div class="empty" id="empty">
+      <strong>Esperando las obras</strong>
+      Aquí aparecerá cada función del concurso en cuanto la Junta Central Fallera publique su ficha. No hay que hacer nada: se actualiza solo.
+    </div>
+  </div>
+
+  <footer>
+    <p>Datos tomados de las fichas que publica Junta Central Fallera en fallas.com (categoría Cultura). Un robot revisa la web dos veces al día y añade solo las notas con ficha de Teatre Faller; el resto de noticias se ignora.</p>
+    <p>«Sin dato» significa que la ficha no publicó esa cifra; no cuenta como cero en medias ni rankings. Los actores se cuentan como personas únicas: quien hace varios papeles cuenta una vez.</p>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const CATS = ["Sainet", "Tercera", "Segona", "Primera", "Especial", "Jove", "Infantil"];
+  const CAT_VAR = { Sainet: "--sainet", Tercera: "--tercera", Segona: "--segona", Primera: "--primera" };
+  const FESTIVOS = new Set(["2026-10-09","2026-10-12","2026-11-01","2026-12-06","2026-12-08","2026-12-25","2027-01-01","2027-01-06","2027-01-22","2027-03-19","2027-03-29"]);
+  const DOW = ["dom","lun","mar","mié","jue","vie","sáb"];
+  const DOW_FULL = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+  const MES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+
+  let rows = [];
+  let meta = null;
+  let cat = "Todas";
+  let mine = "";
+  try { const s = localStorage.getItem("tf-mine"); if (s) mine = s; } catch (e) {}
+  try { const c = localStorage.getItem("tf-cat"); if (c) cat = c; } catch (e) {}
+
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+  const fmt = (n) => n == null ? "–" : Math.round(n).toLocaleString("es-ES");
+  const fmt1 = (n) => n == null ? "–" : n.toLocaleString("es-ES", { maximumFractionDigits: 1 });
+  const d = (iso) => { const [y,m,dd] = iso.split("-").map(Number); return new Date(y, m-1, dd); };
+  const catColor = (c) => `var(${CAT_VAR[c] || "--altres"})`;
+  const has = (v) => typeof v === "number" && isFinite(v);
+  const isMine = (r) => !!mine && r.comision === mine;
+  const pct = (n) => n == null ? "–" : n.toLocaleString("es-ES", { maximumFractionDigits: n < 10 ? 1 : 0 }) + "%";
+  const dayLabel = (r) => {
+    if (!r.fecha) return "";
+    const dt = d(r.fecha), fest = FESTIVOS.has(r.fecha);
+    return `<span class="day">${DOW[dt.getDay()]} ${dt.getDate()} ${MES[dt.getMonth()]}${r.hora ? " · " + esc(r.hora) : ""}</span>${fest ? ' <span class="day fest">festivo</span>' : ""}`;
+  };
+  const tag = (c) => `<span class="tag" style="background:${catColor(c)}">${esc(c)}</span>`;
+
+  function filtered() { return cat === "Todas" ? rows : rows.filter((r) => r.categoria === cat); }
+
+  function renderFilters() {
+    const present = CATS.filter((c) => rows.some((r) => r.categoria === c));
+    rows.forEach((r) => { if (r.categoria && !present.includes(r.categoria)) present.push(r.categoria); });
+    if (cat !== "Todas" && !present.includes(cat)) cat = "Todas";
+    const comisiones = [...new Set(rows.map((r) => r.comision))].sort((a, b) => a.localeCompare(b, "es"));
+    if (mine && !comisiones.includes(mine)) comisiones.unshift(mine);
+    $("#filters").innerHTML =
+      ["Todas", ...present].map((c) => `<button class="chip" type="button" data-cat="${esc(c)}" aria-pressed="${c === cat}">${esc(c)}${c !== "Todas" ? ` <span class="muted num">${rows.filter(r=>r.categoria===c).length}</span>` : ""}</button>`).join("") +
+      `<label class="mine-pick" for="mine">Destacar falla <select id="mine"><option value="" ${!mine ? "selected" : ""}>Ninguna</option>${comisiones.map((c) => `<option value="${esc(c)}" ${c === mine ? "selected" : ""}>${esc(c)}</option>`).join("")}</select></label>`;
+  }
+
+  function renderStats(list) {
+    const att = list.filter((r) => has(r.asistentes));
+    const total = att.reduce((s, r) => s + r.asistentes, 0);
+    const actors = list.reduce((s, r) => s + (r.actores || 0), 0);
+    const v = [list.length, total, att.length ? total / att.length : null, actors];
+    $("#stats").querySelectorAll(".v").forEach((el, i) => (el.textContent = fmt(v[i])));
+  }
+
+  function rankList(list, key, opts = {}) {
+    const withV = list.filter((r) => has(key(r))).sort((a, b) => key(b) - key(a));
+    const without = opts.showMissing ? list.filter((r) => !has(key(r))) : [];
+    const max = Math.max(1, ...withV.map(key));
+    const li = (r, i) => {
+      const v = key(r);
+      return `<li class="rk ${isMine(r) ? "mine" : ""} ${has(v) ? "" : "nodata"}">
+        <span class="pos">${has(v) ? i + 1 : ""}</span>
+        <span class="body">
+          <span class="name" title="${esc(r.comision)}">${esc(r.comision)}</span>
+          <span class="track"><span class="fill" style="width:${has(v) ? (v / max) * 100 : 0}%"></span></span>
+          <span class="meta">${tag(r.categoria)} ${dayLabel(r)}${opts.sub ? " · " + opts.sub(r) : ""}</span>
+        </span>
+        <span class="val">${has(v) ? (opts.dec ? fmt1(v) : fmt(v)) : "sin dato"}${has(v) && opts.share ? `<span class="share">${pct((v / opts.share) * 100)}</span>` : ""}</span>
+      </li>`;
+    };
+    return `<ol class="rank">${withV.map(li).join("")}${without.map((r) => li(r, 0)).join("")}</ol>`;
+  }
+
+  function ticket(list) {
+    if (!mine) return "";
+    const all = rows;
+    const r = all.find(isMine);
+    if (!r) return `<div class="ticket"><span class="eyebrow">Mi falla</span><div class="ticket-title">${esc(mine)}</div><p class="muted" style="margin:0">Todavía no hay ficha publicada de esta comisión. Aparecerá aquí en cuanto la JCF la suba.</p></div>`;
+    const peers = all.filter((x) => x.categoria === r.categoria && has(x.asistentes));
+    const sorted = [...peers].sort((a, b) => b.asistentes - a.asistentes);
+    const pos = sorted.findIndex((x) => x === r) + 1;
+    const avg = peers.length ? peers.reduce((s, x) => s + x.asistentes, 0) / peers.length : null;
+    const diff = has(r.asistentes) && avg ? ((r.asistentes - avg) / avg) * 100 : null;
+    const perActor = has(r.asistentes) && r.actores ? r.asistentes / r.actores : null;
+    const ppl = all.filter((x) => has(x.asistentes) && x.actores).map((x) => x.asistentes / x.actores).sort((a, b) => b - a);
+    const posPA = perActor != null ? ppl.indexOf(perActor) + 1 : null;
+    const globalSorted = all.filter((x) => has(x.asistentes)).sort((a, b) => b.asistentes - a.asistentes);
+    const gpos = globalSorted.indexOf(r) + 1;
+    const totalAll = globalSorted.reduce((s, x) => s + x.asistentes, 0);
+    return `<div class="ticket">
+      <div style="display:grid;gap:6px">
+        <span class="eyebrow">Mi falla · ${esc(r.categoria)}</span>
+        <div class="ticket-title">${esc(r.comision)}</div>
+        <div class="muted" style="font-size:14px">‘${esc(r.obra)}’ · ${dayLabel(r)}</div>
+      </div>
+      <div class="ticket-grid">
+        <div class="tk"><span class="v">${fmt(r.asistentes)}</span><span class="k">espectadores</span>
+          <span class="s ${diff == null ? "" : diff >= 0 ? "up" : "down"}">${diff == null ? "sin dato" : (diff >= 0 ? "+" : "") + Math.round(diff) + "% vs media " + esc(r.categoria)}</span></div>
+        <div class="tk"><span class="v">${pct(has(r.asistentes) && totalAll ? (r.asistentes / totalAll) * 100 : null)}</span><span class="k">del público de todo el concurso</span>
+          <span class="s muted">${has(r.asistentes) && totalAll ? fmt(r.asistentes) + " de " + fmt(totalAll) : ""}</span></div>
+        <div class="tk"><span class="v">${pos ? pos + "º" : "–"}</span><span class="k">en ${esc(r.categoria)} de ${peers.length}</span>
+          <span class="s muted">${gpos ? gpos + "º de " + globalSorted.length + " en todo el concurso" : ""}</span></div>
+        <div class="tk"><span class="v">${r.actores ?? "–"}</span><span class="k">en el elenco</span>
+          <span class="s muted">${r.novells ? r.novells + " novel" + (r.novells > 1 ? "es" : "") : "sin noveles"}</span></div>
+        <div class="tk"><span class="v">${fmt1(perActor)}</span><span class="k">espectadores por actor</span>
+          <span class="s muted">${posPA ? posPA + "º de " + ppl.length : ""}</span></div>
+      </div>
+    </div>`;
+  }
+
+  function timeline(list) {
+    const pts = list.filter((r) => r.fecha).sort((a, b) => a.fecha.localeCompare(b.fecha));
+    if (!pts.length) return "";
+    const t0 = d(pts[0].fecha).getTime(), t1 = d(pts[pts.length - 1].fecha).getTime();
+    const days = Math.max(7, Math.round((t1 - t0) / 864e5));
+    const W = Math.max(640, days * 22 + 80), H = 220, padL = 44, padR = 24, padT = 18, padB = 40;
+    const maxA = Math.max(50, ...pts.map((r) => r.asistentes || 0));
+    const niceMax = Math.ceil(maxA / 50) * 50;
+    const x = (iso) => padL + ((d(iso).getTime() - t0) / 864e5 / days) * (W - padL - padR);
+    const y = (v) => padT + (1 - v / niceMax) * (H - padT - padB);
+    let g = "";
+    for (let v = 0; v <= niceMax; v += niceMax / 4) {
+      g += `<line x1="${padL}" x2="${W - padR}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-width="1"/>
+            <text x="${padL - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${Math.round(v)}</text>`;
+    }
+    // week ticks (Mondays)
+    const start = new Date(t0);
+    for (let i = 0; i <= days; i++) {
+      const dt = new Date(start.getTime() + i * 864e5);
+      if (dt.getDay() === 1 || i === 0) {
+        const iso = `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,"0")}-${String(dt.getDate()).padStart(2,"0")}`;
+        g += `<text x="${x(iso)}" y="${H - 14}" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${dt.getDate()} ${MES[dt.getMonth()]}</text>
+              <line x1="${x(iso)}" x2="${x(iso)}" y1="${H - padB}" y2="${H - padB + 5}" stroke="var(--muted)"/>`;
+      }
+    }
+    g += `<line x1="${padL}" x2="${W - padR}" y1="${H - padB}" y2="${H - padB}" stroke="var(--muted)"/>`;
+    const stack = {};
+    pts.forEach((r) => {
+      const cx = x(r.fecha) + ((stack[r.fecha] = (stack[r.fecha] || 0) + 1) - 1) * 9;
+      const m = isMine(r);
+      if (has(r.asistentes)) {
+        const cy = y(r.asistentes), rad = 4 + Math.sqrt(r.actores || 1) * 2.2;
+        g += `<line x1="${cx}" x2="${cx}" y1="${H - padB}" y2="${cy}" stroke="${m ? "var(--gold)" : catColor(r.categoria)}" stroke-width="${m ? 2.5 : 1.5}" opacity=".55"/>
+              <circle cx="${cx}" cy="${cy}" r="${rad}" fill="${m ? "var(--gold)" : catColor(r.categoria)}" fill-opacity="${m ? 1 : .8}" stroke="var(--surface)" stroke-width="1.5"><title>${esc(r.comision)} · ${esc(r.obra)} · ${r.asistentes} espectadores · ${r.actores} actores</title></circle>`;
+        if (m) g += `<text x="${cx}" y="${cy - rad - 6}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--gold)" font-family="Figtree, sans-serif">${r.asistentes}</text>`;
+      } else {
+        g += `<circle cx="${cx}" cy="${H - padB}" r="4" fill="var(--surface)" stroke="${catColor(r.categoria)}" stroke-width="1.5"><title>${esc(r.comision)} · sin dato de espectadores</title></circle>`;
+      }
+    });
+    return `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Espectadores por función a lo largo del calendario">${g}</svg>`;
+  }
+
+  function averages(list, by, label) {
+    const groups = {};
+    list.forEach((r) => { const k = by(r); if (k == null) return; (groups[k] = groups[k] || []).push(r); });
+    const rowsH = Object.entries(groups).map(([k, g]) => {
+      const a = g.filter((r) => has(r.asistentes));
+      const avg = a.length ? a.reduce((s, r) => s + r.asistentes, 0) / a.length : null;
+      const act = g.reduce((s, r) => s + (r.actores || 0), 0) / g.length;
+      const dur = g.filter((r) => has(r.duracion));
+      return { k, n: g.length, avg, sum: a.reduce((s, r) => s + r.asistentes, 0), act, dur: dur.length ? dur.reduce((s, r) => s + r.duracion, 0) / dur.length : null };
+    });
+    const tot = rowsH.reduce((s, r) => s + r.sum, 0);
+    return `<div style="overflow-x:auto"><table class="avg"><thead><tr><th>${label}</th><th class="n">Obras</th><th class="n">Media espect.</th><th class="n">% público</th><th class="n">Media elenco</th><th class="n">Media min</th></tr></thead><tbody>
+      ${rowsH.map((r) => `<tr><td>${esc(r.k)}</td><td class="n">${r.n}</td><td class="n">${fmt(r.avg)}</td><td class="n">${tot ? pct((r.sum / tot) * 100) : "–"}</td><td class="n">${fmt1(r.act)}</td><td class="n">${fmt(r.dur)}</td></tr>`).join("")}
+    </tbody></table></div>`;
+  }
+
+  function shareBlock(list) {
+    const att = list.filter((r) => has(r.asistentes)).sort((a, b) => b.asistentes - a.asistentes);
+    const total = att.reduce((s, r) => s + r.asistentes, 0);
+    if (!total) return `<p class="muted">Todavía no hay cifras de público.</p>`;
+    const n = att.length, fair = 100 / n;
+    const top = att.slice(0, Math.max(1, Math.ceil(n * 0.2)));
+    const topShare = (top.reduce((s, r) => s + r.asistentes, 0) / total) * 100;
+    const seg = att.map((r, i) => {
+      const p = (r.asistentes / total) * 100;
+      const col = isMine(r) ? "var(--gold)" : i % 2 ? "var(--velvet)" : "var(--velvet-2)";
+      return `<span class="seg" style="width:${p}%;background:${col}" title="${esc(r.comision)} · ${pct(p)}">${p >= 7 ? `<b>${pct(p)}</b>` : ""}</span>`;
+    }).join("");
+    const rowsH = att.map((r, i) => {
+      const p = (r.asistentes / total) * 100, vs = p - fair;
+      return `<li class="${isMine(r) ? "mine" : ""}"><span class="pos">${i + 1}</span><span class="nm">${esc(r.comision)}</span><span class="pc">${pct(p)}</span><span class="vs ${vs >= 0 ? "up" : "down"}">${vs >= 0 ? "+" : "−"}${Math.abs(vs).toLocaleString("es-ES", { maximumFractionDigits: 1 })} pts</span></li>`;
+    }).join("");
+    return `<div class="quota">${seg}</div>
+      <p class="kpi-line">Las ${top.length} falla${top.length > 1 ? "s" : ""} con más público (el 20% de ${n}) reúne${top.length > 1 ? "n" : ""} el <b>${pct(topShare)}</b> de todos los espectadores. Si el reparto fuera igualitario, cada una tendría el ${pct(fair)}.</p>
+      <ol class="sharelist">${rowsH}</ol>
+      <p class="muted" style="font-size:12.5px;margin:0">«pts» = puntos por encima o por debajo del reparto igualitario (${pct(fair)} cada una). Sobre ${fmt(total)} espectadores con dato.</p>`;
+  }
+
+  function season(list) {
+    const sorted = [...list].sort((a, b) => (b.fecha || "").localeCompare(a.fecha || ""));
+    return `<div class="season">${sorted.map((r) => {
+      const dt = r.fecha ? d(r.fecha) : null;
+      const cast = Array.isArray(r.reparto) ? r.reparto : [];
+      return `<details class="obra ${isMine(r) ? "mine" : ""}">
+        <summary>
+          <span class="date">${dt ? `<b>${dt.getDate()}</b>${MES[dt.getMonth()]} · ${DOW[dt.getDay()]}` : "–"}</span>
+          <span class="obra-t"><span class="t">‘${esc(r.obra)}’</span><span class="c">${esc(r.comision)} · ${tag(r.categoria)}${r.inedita ? ' <span class="muted" style="font-size:12px">inédita</span>' : ""}</span></span>
+          <span class="obra-n"><span class="v">${has(r.asistentes) ? fmt(r.asistentes) : "–"}</span><span class="k">${has(r.asistentes) ? "espect." : "sin dato"}</span></span>
+        </summary>
+        <div class="ficha">
+          <dl>
+            <dt>Función</dt><dd>${dt ? DOW_FULL[dt.getDay()] + " " + dt.getDate() + " " + MES[dt.getMonth()] : "–"}${r.hora ? ", " + esc(r.hora) : ""}${r.fecha && FESTIVOS.has(r.fecha) ? " · festivo" : ""}</dd>
+            <dt>Autoría</dt><dd>${esc(r.autor || "–")}</dd>
+            <dt>Dirección</dt><dd>${esc(r.direccion || "–")}</dd>
+            <dt>Elenco</dt><dd>${r.actores ?? "–"} personas${r.novells ? ` · <span class="nov">${r.novells} novel${r.novells > 1 ? "es" : ""}</span>` : ""}</dd>
+            <dt>Duración</dt><dd>${has(r.duracion) ? r.duracion + " min" : "sin dato"}</dd>
+            <dt>Espect./actor</dt><dd>${has(r.asistentes) && r.actores ? fmt1(r.asistentes / r.actores) : "–"}</dd>
+          </dl>
+          ${cast.length ? `<ul class="cast">${cast.map((c) => `<li><span>${esc(c.a)}${c.n ? ' <span class="nov" title="Actor o actriz novel">*</span>' : ""}</span><span class="p">${esc(c.p || "")}</span></li>`).join("")}</ul>` : ""}
+          ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">Ver la noticia en fallas.com →</a>` : ""}
+        </div>
+      </details>`;
+    }).join("")}</div>`;
+  }
+
+  function render() {
+    renderFilters();
+    const list = filtered();
+    renderStats(list);
+    if (!rows.length) { $("#main").innerHTML = `<div class="empty"><strong>Esperando las obras</strong>Aquí aparecerá cada función del concurso en cuanto la Junta Central Fallera publique su ficha. No hay que hacer nada: se actualiza solo.</div>`; return; }
+    const usedCats = new Set(list.map((r) => r.categoria));
+    $("#main").innerHTML = `<div style="display:grid;gap:36px">
+      ${ticket(list)}
+
+      <section class="act">
+        <div class="act-head"><span class="eyebrow">Acto I</span><h2>Quién llena más el patio de butacas</h2>
+          <p>Espectadores de cada función. Fíjate en el día: un domingo o festivo no compite en igualdad con un martes o miércoles.</p></div>
+        ${rankList(list, (r) => r.asistentes, { showMissing: true, share: list.filter((r) => has(r.asistentes)).reduce((s, r) => s + r.asistentes, 0) })}
+      </section>
+
+      <section class="act">
+        <div class="act-head"><span class="eyebrow">Acto I bis</span><h2>Cuota de público</h2>
+          <p>Qué porcentaje del total de espectadores${cat !== "Todas" ? " de " + esc(cat) : " del concurso"} ha llevado cada falla.</p></div>
+        ${shareBlock(list)}
+      </section>
+
+      <section class="act">
+        <div class="act-head"><span class="eyebrow">Acto II</span><h2>El calendario de la temporada</h2>
+          <p>Cada punto es una función: la altura son los espectadores y el tamaño, el elenco.</p></div>
+        <div class="timeline-box">${timeline(list)}</div>
+        <div class="legend">${[...usedCats].map((c) => `<span><i style="background:${catColor(c)}"></i>${esc(c)}</span>`).join("")}${mine ? `<span><i style="background:var(--gold)"></i>${esc(mine)}</span>` : ""}</div>
+      </section>
+
+      <div class="two">
+        <section class="act">
+          <div class="act-head"><span class="eyebrow">Acto III</span><h2>Elencos más grandes</h2>
+            <p>Personas en escena, sin contar dos veces a quien dobla papel.</p></div>
+          ${rankList(list, (r) => r.actores, { sub: (r) => r.novells && r.actores ? `${r.novells} novel${r.novells > 1 ? "es" : ""} (${pct((r.novells / r.actores) * 100)})` : "" })}
+        </section>
+        <section class="act">
+          <div class="act-head"><span class="eyebrow">Acto IV</span><h2>Espectadores por actor</h2>
+            <p>Cuánto público arrastra cada comisión más allá de las familias del elenco.</p></div>
+          ${rankList(list, (r) => has(r.asistentes) && r.actores ? r.asistentes / r.actores : null, { dec: true })}
+        </section>
+      </div>
+
+      <div class="two">
+        <section class="act">
+          <div class="act-head"><span class="eyebrow">Entreacto</span><h2>Por categoría</h2></div>
+          ${averages(rows, (r) => r.categoria, "Categoría")}
+        </section>
+        <section class="act">
+          <div class="act-head"><span class="eyebrow">Entreacto</span><h2>Por día de la semana</h2></div>
+          ${averages(list, (r) => r.fecha ? (FESTIVOS.has(r.fecha) ? "Festivo" : DOW_FULL[d(r.fecha).getDay()]) : null, "Día")}
+        </section>
+      </div>
+
+      <section class="act">
+        <div class="act-head"><span class="eyebrow">Acto V</span><h2>Duración</h2><p>Minutos de cada función.</p></div>
+        ${rankList(list, (r) => r.duracion, { showMissing: true })}
+      </section>
+
+      <section class="act">
+        <div class="act-head"><span class="eyebrow">Programa</span><h2>Todas las funciones</h2><p>Toca una obra para ver su ficha y su reparto. Las más recientes, arriba.</p></div>
+        ${season(list)}
+      </section>
+    </div>`;
+  }
+
+  function renderStatus() {
+    const el = $("#status");
+    if (!meta) { el.innerHTML = `<b>${rows.length}</b> fichas`; return; }
+    const t = meta.ultimaRevision ? new Date(meta.ultimaRevision) : null;
+    el.innerHTML = `<b>${rows.length}</b> fichas · revisado ${t ? t.toLocaleString("es-ES", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }) : "–"}`;
+  }
+
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-cat]");
+    if (!b) return;
+    cat = b.dataset.cat;
+    try { localStorage.setItem("tf-cat", cat); } catch (err) {}
+    render();
+  });
+  document.addEventListener("change", (e) => {
+    if (e.target.id !== "mine") return;
+    mine = e.target.value;
+    try { localStorage.setItem("tf-mine", mine); } catch (err) {}
+    render();
+  });
+
+  render();
+
+  (async () => {
+    // 1) data.json publicado junto a la página (funciona en cualquier alojamiento, sin cuenta)
+    try {
+      const res = await fetch("data.json", { cache: "no-store" });
+      if (res.ok) {
+        const j = await res.json();
+        if (Array.isArray(j.obras)) {
+          rows = j.obras; meta = j.meta || null;
+          render(); renderStatus();
+          return;
+        }
+      }
+    } catch (e) {}
+    // 2) base de datos de la página en claude.ai
+    const db = await (window.claude?.use ? window.claude.use("db") : Promise.resolve(null));
+    if (!db) {
+      $("#status").textContent = "No se pudieron cargar los datos";
+      return;
+    }
+    db.collection("obras").onSnapshot((snap) => {
+      rows = snap.docs.filter((s) => s.exists).map((s) => ({ id: s.id, ...s.data() }));
+      render(); renderStatus();
+    }, (err) => { $("#status").textContent = "No se pudieron cargar los datos (" + (err?.code || "error") + ")"; });
+    db.doc("meta/estado").onSnapshot((s) => { meta = s.exists ? s.data() : null; renderStatus(); }, () => {});
+  })();
+})();
+</script>
+
+</body>
+</html>
