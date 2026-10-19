@@ -1,53 +1,28 @@
 [
  {
   "id": "eatre-faller-benidorm-mai-dorm-l-obra-d-arxiduc-carles-music-gomis",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-09-30"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  },
  {
   "id": "teatre-faller-alejandro-i-ana-lobra-de-ruben-dario-fra-lluis-colomer",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-14"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  },
  {
   "id": "teatre-faller-de-remat-lobra-de-josep-soto-mico-sindic-mocholi",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-08"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  },
  {
   "id": "teatre-faller-general-pando-serrano-flores-presenta-a-la-cua",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-01"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  },
  {
   "id": "teatre-faller-golfus-de-roma-lobra-de-placa-lope-de-vega",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-13"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  },
  {
   "id": "teatre-faller-la-demama-lobra-de-mestre-aguilar-maties-perello",
@@ -56,10 +31,6 @@
    "obra": {
     "lector": "La demanà",
     "guardado": "La demamà"
-   },
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-12"
    }
   }
  },
@@ -70,16 +41,54 @@
    "comision": {
     "lector": "Doctor Olóriz-Arzobispo Fabián y Fuero",
     "guardado": "Doctor Olóriz-Arquebisbe Fabián i Fuero"
-   },
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-09-28"
    }
   }
  },
  {
   "id": "teatre-faller-transtlantic-13-lobra-de-duc-de-gaeta-la-pobla-de-farnals",
-  "error": "no reconocida como ficha"
+  "ok": false,
+  "diferencias": {
+   "reparto_actores": {
+    "lector": [
+     "Marco E. Soriano Soriano",
+     "Eugenio Escalera García",
+     "Alba Casas Sanz",
+     "Natalia Mas Diana",
+     "Emilia Zulima Sanz Melero",
+     "Ferran Llopis Llopis",
+     "Ana Belén Sastrisques Gálvez",
+     "Macarena E.Izquierdo Gutiérrez",
+     "Mªjosé ÚBEDA GARCÍA",
+     "Abriltomás Rodríguez",
+     "Irene Mir Olba",
+     "Aida Marín Sanz",
+     "Lidia Casas Sanz",
+     "Marina Alfonso Gimeno",
+     "Jose Vicente Tomas Navarro",
+     "Héctor Jiménez Portillo",
+     "Marcos Soriano Vidal"
+    ],
+    "guardado": [
+     "Marco E. Soriano Soriano",
+     "Eugenio Escalera García",
+     "Alba Casas Sanz",
+     "Natalia Mas Diana",
+     "Zulima Sanz Melero",
+     "Ferran Llopis Llopis",
+     "Ana Belén Sastrisques Gálvez",
+     "Macarena E. Izquierdo Gutiérrez",
+     "Mª José Úbeda García",
+     "Abril Tomás Rodríguez",
+     "Irene Mir Olba",
+     "Aida Marín Sanz",
+     "Lidia Casas Sanz",
+     "Marina Alfonso Gimeno",
+     "Jose Vicente Tomas Navarro",
+     "Héctor Jiménez Portillo",
+     "Marcos Soriano Vidal"
+    ]
+   }
+  }
  },
  {
   "id": "teatre-faller-tretze-cabaret-lobra-dactor-mora-av-constitucio",
@@ -88,21 +97,12 @@
    "comision": {
     "lector": "Actor Mora-Av. Constitución",
     "guardado": "Actor Mora-Av. Constitució"
-   },
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-09-23"
    }
   }
  },
  {
   "id": "teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo",
-  "ok": false,
-  "diferencias": {
-   "publicado": {
-    "lector": null,
-    "guardado": "2026-10-07"
-   }
-  }
+  "ok": true,
+  "diferencias": {}
  }
 ]
