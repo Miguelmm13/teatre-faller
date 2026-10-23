@@ -1,8 +1,14 @@
 {
  "meta": {
-  "ultimaRevision": "2026-10-19T13:54:27Z",
+  "ultimaRevision": "2026-10-23T12:39:15Z",
   "ignoradas": [
-   "bases-concurse-de-presentacions"
+   "bases-concurse-de-presentacions",
+   "ninots-indultats-infantils",
+   "segona-jornada-del-xli-concurs-de-playbacks-a-la-sala-canal",
+   "arranca-el-xli-concurs-de-playbacks-de-jcf",
+   "269-milions-deuros-en-ajudes-a-les-comissions-per-a-les-falles-de-2027",
+   "beatriz-i-la-seua-cort-dhonor-visiten-el-gremi-de-sastres-i-modistes",
+   "mar-de-somnis-prepara-els-gipons-negres-de-la-fmv-i-la-seua-ch"
   ]
  },
  "obras": [
@@ -620,6 +626,381 @@
    ],
    "url": "https://fallas.com/va/teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo/",
    "id": "teatre-faller-valencia-el-regne-del-sant-grial-lobra-de-sapadors-vicent-lleo"
+  },
+  {
+   "id": "teatre-faller-olivereta-cerda-i-rico-presenta-lultim-que-abaixe-la-persiana",
+   "comision": "Olivereta-Cerdà i Rico",
+   "categoria": "Sainet",
+   "fecha": "2026-10-18",
+   "hora": "12:30",
+   "obra": "L’últim que abaixe la persiana",
+   "inedita": true,
+   "autor": "Eva Mª Guijarro González",
+   "direccion": "Eva Mª Guijarro González",
+   "reparto": [
+    {
+     "p": "President",
+     "a": "Sixto Vicente Bermejo Ramírez",
+     "n": false
+    },
+    {
+     "p": "Vicepresident Festejos",
+     "a": "Ignacio Bermejo Ramírez",
+     "n": false
+    },
+    {
+     "p": "Vicepresidenta 2",
+     "a": "Desamparados Canet Marco",
+     "n": false
+    },
+    {
+     "p": "Secretària",
+     "a": "Esther Rius Mas",
+     "n": true
+    },
+    {
+     "p": "Fallera Major",
+     "a": "Aitana De Juan Llácer",
+     "n": true
+    },
+    {
+     "p": "Mare Fallera Major",
+     "a": "Dori Llácer Mora",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Eva Mª Guijarro González",
+     "n": false
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Teresa De La Hoz Fernandez",
+     "n": false
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "José Antón Barberá Giner",
+     "n": false
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Mª José Comeche Borrell",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Pedro Hernández Navarro",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Blanca García Guijarro",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Patricia Sarrión Martínez",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Mª José Sanchis Salguero",
+     "n": true
+    },
+    {
+     "p": "Assitent A La Junta",
+     "a": "Pilar Manzanera Jiménez",
+     "n": true
+    }
+   ],
+   "actores": 15,
+   "novells": 9,
+   "duracion": 36,
+   "asistentes": 58,
+   "publicado": "2026-10-18",
+   "url": "https://fallas.com/va/teatre-faller-olivereta-cerda-i-rico-presenta-lultim-que-abaixe-la-persiana/"
+  },
+  {
+   "id": "teatre-faller-neleta-so-figa-lobra-de-santiago-rusinol-comte-de-lumiares",
+   "comision": "Santiago Rusiñol-Comte de Lumiares",
+   "categoria": "Sainet",
+   "fecha": "2026-10-17",
+   "hora": "10:30",
+   "obra": "Neleta so figa",
+   "inedita": true,
+   "autor": "Carles Bori Escuriet",
+   "direccion": "Amparo Gimeno Casanova",
+   "reparto": [
+    {
+     "p": "Tomasa",
+     "a": "Ampar Cabrera I Sanfélix",
+     "n": false
+    },
+    {
+     "p": "Carmela",
+     "a": "Irene Martínez Serrano",
+     "n": false
+    },
+    {
+     "p": "Sra. Visantica",
+     "a": "Mª Carmen Gimeno Casanova",
+     "n": false
+    },
+    {
+     "p": "Neleta",
+     "a": "Sara Hueso Sánchez",
+     "n": false
+    },
+    {
+     "p": "Elvirín",
+     "a": "Amanda Alberich Álvarez",
+     "n": false
+    },
+    {
+     "p": "Sangonereta",
+     "a": "Jorge Ramón Ros",
+     "n": true
+    },
+    {
+     "p": "Jaume",
+     "a": "David García Carrasco",
+     "n": false
+    }
+   ],
+   "actores": 7,
+   "novells": 1,
+   "duracion": 42,
+   "asistentes": 73,
+   "publicado": "2026-10-17",
+   "url": "https://fallas.com/va/teatre-faller-neleta-so-figa-lobra-de-santiago-rusinol-comte-de-lumiares/"
+  },
+  {
+   "id": "teatre-faller-outdoor-training-lobra-de-cami-dalba-castell-de-cullera",
+   "comision": "Camí d’Alba-Castell de Cullera",
+   "categoria": "Tercera",
+   "fecha": "2026-10-16",
+   "hora": "10:30",
+   "obra": "Outdoor training",
+   "inedita": false,
+   "autor": "Ángeles Hernández",
+   "direccion": "Ximo Hernández",
+   "reparto": [
+    {
+     "p": "Bea",
+     "a": "Jessica Gorgues Martínez",
+     "n": false
+    },
+    {
+     "p": "Jordi",
+     "a": "Jose Pardo Moreno",
+     "n": false
+    },
+    {
+     "p": "Pilu",
+     "a": "Isabel Tejado Valladolid",
+     "n": false
+    },
+    {
+     "p": "Concha",
+     "a": "Esther Molina Herrero",
+     "n": false
+    },
+    {
+     "p": "Paco",
+     "a": "José Manuel Mocholí Roca",
+     "n": false
+    },
+    {
+     "p": "Mario",
+     "a": "Alejandro López Salas",
+     "n": false
+    },
+    {
+     "p": "Marga",
+     "a": "Hortensia Alba Vidal",
+     "n": false
+    },
+    {
+     "p": "Cap Suprem",
+     "a": "Antonio Ángel Sánchez Camacho",
+     "n": true
+    },
+    {
+     "p": "Guàrdia 1",
+     "a": "José Pardo Fernández",
+     "n": false
+    },
+    {
+     "p": "Guàrdia 2",
+     "a": "Rosa Prieto Albuixech",
+     "n": false
+    }
+   ],
+   "actores": 10,
+   "novells": 1,
+   "duracion": 51,
+   "asistentes": 76,
+   "publicado": "2026-10-16",
+   "url": "https://fallas.com/va/teatre-faller-outdoor-training-lobra-de-cami-dalba-castell-de-cullera/"
+  },
+  {
+   "id": "teatre-faller-i-si-fem-una-bogeria-lobra-de-barri-de-la-llum",
+   "comision": "Barri de La Llum",
+   "categoria": "Tercera",
+   "fecha": "2026-10-14",
+   "hora": "21:30",
+   "obra": "I si fem una bogeria?",
+   "inedita": true,
+   "autor": "Maria José Sancho Martín",
+   "direccion": "Maria José Sancho Martín",
+   "reparto": [
+    {
+     "p": "Faustino",
+     "a": "Rafael Sánchez Rios",
+     "n": false
+    },
+    {
+     "p": "Esperança",
+     "a": "Paula López Cana",
+     "n": true
+    },
+    {
+     "p": "Consuelo",
+     "a": "Noelia Márquez Defez",
+     "n": true
+    },
+    {
+     "p": "Robus",
+     "a": "María Conejo Lirio",
+     "n": true
+    },
+    {
+     "p": "Naxo",
+     "a": "Carlos Martínez Boltes",
+     "n": true
+    },
+    {
+     "p": "Adrian",
+     "a": "Carlos Igual Pla",
+     "n": true
+    },
+    {
+     "p": "Emilio",
+     "a": "Alberto Enrique Pallarol Medina",
+     "n": false
+    },
+    {
+     "p": "George",
+     "a": "Javier López Sánchez",
+     "n": true
+    },
+    {
+     "p": "Ricardo",
+     "a": "José Antonio Martínez Fernández",
+     "n": false
+    },
+    {
+     "p": "Sagrari",
+     "a": "Paloma Sanchis Rodríguez",
+     "n": false
+    },
+    {
+     "p": "Rosario",
+     "a": "Ana María Recio Royuela",
+     "n": false
+    },
+    {
+     "p": "Andres",
+     "a": "Hernán David Correa Gomez",
+     "n": true
+    },
+    {
+     "p": "Catalina",
+     "a": "Mª.Ángeles Guzmán Sielva",
+     "n": false
+    },
+    {
+     "p": "Aurelia",
+     "a": "Nuria Urgel Martínez",
+     "n": true
+    },
+    {
+     "p": "Nataxa",
+     "a": "María Cristina Álvarez Sánchez,",
+     "n": false
+    },
+    {
+     "p": "Angustias",
+     "a": "Rosa María Esteve Pelegrín",
+     "n": true
+    },
+    {
+     "p": "Curro",
+     "a": "Jose López Leal",
+     "n": false
+    },
+    {
+     "p": "Leandro",
+     "a": "Jorge Verde Pérez",
+     "n": true
+    },
+    {
+     "p": "German",
+     "a": "Manuel Calo Hinarejos",
+     "n": true
+    }
+   ],
+   "actores": 19,
+   "novells": 11,
+   "duracion": 90,
+   "asistentes": 113,
+   "publicado": "2026-10-15",
+   "url": "https://fallas.com/va/teatre-faller-i-si-fem-una-bogeria-lobra-de-barri-de-la-llum/"
+  },
+  {
+   "id": "teatre-faller-baro-de-sant-petrillo-leonor-jovani-presenta-la-consulta-del-doctor-melquiades",
+   "comision": "Baró de Sant Petrillo-Leonor Jovani",
+   "categoria": "Sainet",
+   "fecha": "2026-10-10",
+   "hora": "10:30",
+   "obra": "La consulta del doctor melquíades",
+   "inedita": true,
+   "autor": "José Cedena Sánchez-Cabezudo",
+   "direccion": "Ana Bleda Martí",
+   "reparto": [
+    {
+     "p": "Melquiades",
+     "a": "David Frigols Vila",
+     "n": true
+    },
+    {
+     "p": "María Confusión",
+     "a": "Pepa Garde Espada",
+     "n": true
+    },
+    {
+     "p": "María Dolores De Todas",
+     "a": "Carmen Bartual Soria",
+     "n": true
+    },
+    {
+     "p": "Tomasa Mesiento",
+     "a": "Pilar Canet Sevillano",
+     "n": true
+    },
+    {
+     "p": "Representante",
+     "a": "Jesús Del Águila Nogales",
+     "n": true
+    }
+   ],
+   "actores": 5,
+   "novells": 5,
+   "duracion": 32,
+   "asistentes": 43,
+   "publicado": "2026-10-10",
+   "url": "https://fallas.com/va/teatre-faller-baro-de-sant-petrillo-leonor-jovani-presenta-la-consulta-del-doctor-melquiades/"
   }
  ]
 }
