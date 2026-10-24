@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-10-23T12:39:15Z",
+  "ultimaRevision": "2026-10-24T12:01:28Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -1001,6 +1001,94 @@
    "asistentes": 43,
    "publicado": "2026-10-10",
    "url": "https://fallas.com/va/teatre-faller-baro-de-sant-petrillo-leonor-jovani-presenta-la-consulta-del-doctor-melquiades/"
+  },
+  {
+   "id": "teatre-faller-parelles-de-fet-de-fet-parelles-lobra-denginyer-josep-sirera-pius-ix",
+   "comision": "Enginyer Josep Sirera-Pius IX",
+   "categoria": "Tercera",
+   "fecha": "2026-10-20",
+   "hora": "21:30",
+   "obra": "Parelles de fet, de fet parelles",
+   "inedita": false,
+   "autor": "Carles Pons",
+   "direccion": "Rocío Sigalat Mariscal",
+   "reparto": [
+    {
+     "p": "Actor A",
+     "a": "Raquel Fernández Ferrando",
+     "n": false
+    },
+    {
+     "p": "Actor B",
+     "a": "Juan José Pérez Piles",
+     "n": false
+    },
+    {
+     "p": "Femella/Ella/Doctor",
+     "a": "María Vergara Orts",
+     "n": false
+    },
+    {
+     "p": "Mascle/Ell/Ell/Jutge",
+     "a": "Raúl Diaz Gil",
+     "n": false
+    },
+    {
+     "p": "Ell/Ell/Actor",
+     "a": "José Armando Murillo Contó",
+     "n": false
+    },
+    {
+     "p": "Ella/Ella",
+     "a": "Rocío Sigalat Mariscal",
+     "n": false
+    }
+   ],
+   "actores": 6,
+   "novells": 0,
+   "duracion": 64,
+   "asistentes": 111,
+   "publicado": "2026-10-21",
+   "url": "https://fallas.com/va/teatre-faller-parelles-de-fet-de-fet-parelles-lobra-denginyer-josep-sirera-pius-ix/"
+  },
+  {
+   "id": "teatre-faller-santiago-rusinol-comte-de-lumiares-presenta-molt-de-bombo",
+   "comision": "Santiago Rusiñol-Comte de Lumiares",
+   "categoria": "Tercera",
+   "fecha": "2026-10-19",
+   "hora": "21:30",
+   "obra": "Molt de bombo",
+   "inedita": true,
+   "autor": "Carles Bori Escuriet",
+   "direccion": "Amparo Gimeno Casanova",
+   "reparto": [
+    {
+     "p": "Greta",
+     "a": "Aitana Rubio Íñiguez",
+     "n": false
+    },
+    {
+     "p": "Balma",
+     "a": "Lucía Bonilla Tárraga",
+     "n": false
+    },
+    {
+     "p": "Quica",
+     "a": "Germana Bori I Oltra",
+     "n": false
+    },
+    {
+     "p": "Chimo/Robert/Pau/Carmelo",
+     "a": "Juan José Simón Vendrell",
+     "n": false
+    }
+   ],
+   "actores": 4,
+   "novells": 0,
+   "duracion": 110,
+   "asistentes": 111,
+   "publicado": "2026-10-20",
+   "url": "https://fallas.com/va/teatre-faller-santiago-rusinol-comte-de-lumiares-presenta-molt-de-bombo/"
   }
  ]
 }
