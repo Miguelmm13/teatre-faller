@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-10-27T13:13:46Z",
+  "ultimaRevision": "2026-10-28T14:03:14Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -1092,6 +1092,222 @@
    "asistentes": 111,
    "publicado": "2026-10-20",
    "url": "https://fallas.com/va/teatre-faller-santiago-rusinol-comte-de-lumiares-presenta-molt-de-bombo/"
+  },
+  {
+   "id": "teatre-faller-evas-show-lobra-de-sant-josep-de-la-muntanya-terol",
+   "comision": "Sant Josep de la Muntanya-Terol",
+   "categoria": "Tercera",
+   "fecha": "2026-10-26",
+   "hora": "21:30",
+   "obra": "Eva’s show",
+   "inedita": false,
+   "autor": "Jerónimo Cornelles",
+   "direccion": "Amparo Cuartero Latorre",
+   "reparto": [
+    {
+     "p": "Àngel 1",
+     "a": "Cristina Tomás Espert",
+     "n": false
+    },
+    {
+     "p": "Àngel 2",
+     "a": "Elena Vila Albiol",
+     "n": false
+    },
+    {
+     "p": "Eva",
+     "a": "Olga Martínez Lapiedra",
+     "n": false
+    },
+    {
+     "p": "Laura",
+     "a": "Ana Vila Albiol",
+     "n": true
+    },
+    {
+     "p": "Maria",
+     "a": "Alba Pérez-Salamero Torrent",
+     "n": true
+    }
+   ],
+   "actores": 5,
+   "novells": 2,
+   "duracion": 76,
+   "asistentes": 171,
+   "publicado": "2026-10-27",
+   "url": "https://fallas.com/va/teatre-faller-evas-show-lobra-de-sant-josep-de-la-muntanya-terol/"
+  },
+  {
+   "id": "teatre-faller-infantil-avinguda-regne-de-valencia-duc-de-calabria-presenta-amparito-la-filla-del-mestre",
+   "comision": "Avinguda Regne de València-Duc de Calàbria",
+   "categoria": "Infantil",
+   "fecha": "2026-10-24",
+   "hora": "11:30",
+   "obra": "Amparito, la filla del mestre",
+   "inedita": true,
+   "autor": "Javier Donat Sendra",
+   "direccion": "Lucía Andrés Zarapico",
+   "reparto": [
+    {
+     "p": "Lluna",
+     "a": "Carlota Hermida Sahagún",
+     "n": true
+    },
+    {
+     "p": "Amparito",
+     "a": "Laura Valero Almela",
+     "n": true
+    },
+    {
+     "p": "Cleo",
+     "a": "Sofía Hervás De Labaig",
+     "n": true
+    },
+    {
+     "p": "Violant",
+     "a": "Olivia Mínguez Martínez",
+     "n": true
+    },
+    {
+     "p": "Coco",
+     "a": "Blanca Rodríguez Soriano",
+     "n": true
+    }
+   ],
+   "actores": 5,
+   "novells": 5,
+   "duracion": 45,
+   "asistentes": 110,
+   "publicado": "2026-10-24",
+   "url": "https://fallas.com/va/teatre-faller-infantil-avinguda-regne-de-valencia-duc-de-calabria-presenta-amparito-la-filla-del-mestre/"
+  },
+  {
+   "id": "teatre-faller-veines-lobra-de-periodista-gil-sumbiela-assutzena",
+   "comision": "Periodista Gil Sumbiela-Assutzena",
+   "categoria": "Sainet",
+   "fecha": "2026-10-24",
+   "hora": "10:30",
+   "obra": "Veines",
+   "inedita": false,
+   "autor": "Carles Godía",
+   "direccion": "Vicente Benedicto Valero",
+   "reparto": [
+    {
+     "p": "Gitana",
+     "a": "Mª Consuelo Jordán De Luna,",
+     "n": true
+    },
+    {
+     "p": "Amparo",
+     "a": "Mª Teresa Serrano Sorlí",
+     "n": false
+    },
+    {
+     "p": "Rosario",
+     "a": "Aranzazu San Pedro Martín",
+     "n": false
+    },
+    {
+     "p": "Milagros",
+     "a": "Mª Cruz Porras Naranjo",
+     "n": false
+    },
+    {
+     "p": "Xisco",
+     "a": "Rafael Quiñonero Suárez",
+     "n": false
+    },
+    {
+     "p": "Joan",
+     "a": "José Luis Muñoz Bellver",
+     "n": false
+    },
+    {
+     "p": "Marcel",
+     "a": "Juan Antonio López Guijarro",
+     "n": true
+    },
+    {
+     "p": "Teresita",
+     "a": "Mª Dolores Pastor Mora",
+     "n": false
+    }
+   ],
+   "actores": 8,
+   "novells": 2,
+   "duracion": 35,
+   "asistentes": 74,
+   "publicado": "2026-10-24",
+   "url": "https://fallas.com/va/teatre-faller-veines-lobra-de-periodista-gil-sumbiela-assutzena/"
+  },
+  {
+   "id": "teatre-faller-un-dubte-raonable-lobra-de-manuel-arnau-la-creu-coberta",
+   "comision": "Manuel Arnau-La Creu Coberta",
+   "categoria": "Tercera",
+   "fecha": "2026-10-21",
+   "hora": "21:30",
+   "obra": "Un dubte raonable",
+   "inedita": false,
+   "autor": "Reginal Rose",
+   "direccion": "Luis Vicente De Ros Anguelu",
+   "reparto": [
+    {
+     "p": "Jurat 1",
+     "a": "José Ramón De Ros Anguelu",
+     "n": false
+    },
+    {
+     "p": "Jurat 2",
+     "a": "Esther Martínez Navarro",
+     "n": false
+    },
+    {
+     "p": "Jurat 3",
+     "a": "María Dolores Garrido Garres",
+     "n": false
+    },
+    {
+     "p": "Jurat 4",
+     "a": "Vicente Climent Pla",
+     "n": false
+    },
+    {
+     "p": "Jurat 5",
+     "a": "María Carmen Albert González",
+     "n": false
+    },
+    {
+     "p": "Jurat 6",
+     "a": "Lorena Limorte Martínez",
+     "n": false
+    },
+    {
+     "p": "Jurat 7",
+     "a": "Óscar Perles Vendrell",
+     "n": false
+    },
+    {
+     "p": "Jurat 8",
+     "a": "Vicente José Beneyto Meliá",
+     "n": false
+    },
+    {
+     "p": "Jurat 9",
+     "a": "Luis Vicente De Ros Anguelu",
+     "n": false
+    },
+    {
+     "p": "Guàrdia",
+     "a": "Pablo Escobar Jiménez",
+     "n": true
+    }
+   ],
+   "actores": 10,
+   "novells": 1,
+   "duracion": 95,
+   "asistentes": 93,
+   "publicado": "2026-10-22",
+   "url": "https://fallas.com/va/teatre-faller-un-dubte-raonable-lobra-de-manuel-arnau-la-creu-coberta/"
   }
  ]
 }
