@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-11-04T15:27:06Z",
+  "ultimaRevision": "2026-11-05T15:29:06Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -1317,6 +1317,312 @@
    "asistentes": 93,
    "publicado": "2026-10-22",
    "url": "https://fallas.com/va/teatre-faller-un-dubte-raonable-lobra-de-manuel-arnau-la-creu-coberta/"
+  },
+  {
+   "id": "teatre-faller-mentides-arriscades-lobra-de-en-plom-guillem-de-castro",
+   "comision": "En Plom-Guillem de Castro",
+   "categoria": "Sainet",
+   "fecha": "2026-11-01",
+   "hora": "16:00",
+   "obra": "Mentides arriscades",
+   "inedita": true,
+   "autor": "Vicente López Torres",
+   "direccion": "Vicente Lopez Torres",
+   "reparto": [
+    {
+     "p": "Marta",
+     "a": "Natalia Rodríguez Escriche",
+     "n": false
+    },
+    {
+     "p": "Lucia",
+     "a": "Paula Garcia Villalba",
+     "n": false
+    },
+    {
+     "p": "Paula",
+     "a": "Ana Martínez Sáez",
+     "n": false
+    },
+    {
+     "p": "Nora",
+     "a": "Claudia Pastor Royuela",
+     "n": false
+    },
+    {
+     "p": "Clara",
+     "a": "Sandra Aparicio Benages",
+     "n": true
+    },
+    {
+     "p": "Sílvia",
+     "a": "Maria Del Rocío Arroyo Barredo",
+     "n": false
+    },
+    {
+     "p": "Marc",
+     "a": "Carlos Joli Prades",
+     "n": false
+    },
+    {
+     "p": "Emma",
+     "a": "Marina Fernández Costa",
+     "n": true
+    },
+    {
+     "p": "Javi",
+     "a": "Juan Nicasio Rodríguez Ruiz",
+     "n": true
+    },
+    {
+     "p": "Father",
+     "a": "Juan R. Martínez Del Valle",
+     "n": false
+    },
+    {
+     "p": "Mother",
+     "a": "Pilar Quilis Monzonís",
+     "n": false
+    },
+    {
+     "p": "L’Alemà",
+     "a": "Juan José Rojas Valenciano",
+     "n": true
+    }
+   ],
+   "actores": 12,
+   "novells": 4,
+   "duracion": 35,
+   "asistentes": 76,
+   "publicado": "2026-11-01",
+   "url": "https://fallas.com/va/teatre-faller-mentides-arriscades-lobra-de-en-plom-guillem-de-castro/"
+  },
+  {
+   "id": "teatre-faller-infantil-leliana-cid-presenta-lestel-del-temps",
+   "comision": "L’Eliana-Cid",
+   "categoria": "Infantil",
+   "fecha": "2026-11-01",
+   "hora": "12:30",
+   "obra": "L’estel del temps",
+   "inedita": true,
+   "autor": "Cristina Bou Rodríguez",
+   "direccion": "Isabel Landete Bou",
+   "reparto": [
+    {
+     "p": "",
+     "a": "Empar Lucía Murillo Garcia",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Carlota Nerea Jiménez Belinchón",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Pepet Mario Ojeda Melero ()",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Iaio Alba Martínez Jiménez ()",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Elisabeth María Cornejo Madrigal",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Alexandra Martina Tomás Pérez",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Ana Triana Serra Blanes",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Penelope Sofía Martínez Jiménez,",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Helena Mireia Izquierdo Teruel",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Epifania Eva Ramirez Víllora",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Arquimedes Inés López Martínez",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Vitruvio Noelia Ramírez Villora",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Stuart María Marco Castillo",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Ferb Adriana Martínez Luz",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Marty Carla Jiménez Belinchón ()",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Candance Lucía Borrero Guillén",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Iaia Carla González Baixauli",
+     "n": false
+    }
+   ],
+   "actores": 17,
+   "novells": 14,
+   "duracion": 44,
+   "asistentes": 98,
+   "publicado": "2026-11-01",
+   "url": "https://fallas.com/va/teatre-faller-infantil-leliana-cid-presenta-lestel-del-temps/"
+  },
+  {
+   "id": "teatre-faller-infantil-cami-dalba-castell-de-cullera-presenta-jocs-de-xiquets",
+   "comision": "Camí d’Alba-Castell de Cullera",
+   "categoria": "Infantil",
+   "fecha": "2026-11-01",
+   "hora": "10:30",
+   "obra": "Jocs de xiquets",
+   "inedita": true,
+   "autor": "Ximo Hernández",
+   "direccion": "Ximo Hernández",
+   "reparto": [
+    {
+     "p": "Iris",
+     "a": "Martina López Tejado",
+     "n": true
+    },
+    {
+     "p": "Mimi",
+     "a": "Valle López Tejado ()",
+     "n": true
+    },
+    {
+     "p": "Dolça",
+     "a": "Adriana Klegues Lara",
+     "n": true
+    },
+    {
+     "p": "Coco",
+     "a": "Matteo López Tejado ()",
+     "n": true
+    },
+    {
+     "p": "Sherlock",
+     "a": "Manuel Olmos Duque",
+     "n": true
+    },
+    {
+     "p": "Soldat Ryan",
+     "a": "Iker Tejado Garcia ()",
+     "n": true
+    },
+    {
+     "p": "Soldat 3",
+     "a": "Sofía Carcelén Ferrer ()",
+     "n": true
+    },
+    {
+     "p": "Soldat 2",
+     "a": "Laia Sánchez Molina ()",
+     "n": true
+    },
+    {
+     "p": "Shana",
+     "a": "Noa Rodríguez Martínez",
+     "n": true
+    },
+    {
+     "p": "Soldat 1",
+     "a": "Alejandro Sánchez Gavilán",
+     "n": true
+    }
+   ],
+   "actores": 10,
+   "novells": 10,
+   "duracion": 28,
+   "asistentes": 68,
+   "publicado": "2026-11-01",
+   "url": "https://fallas.com/va/teatre-faller-infantil-cami-dalba-castell-de-cullera-presenta-jocs-de-xiquets/"
+  },
+  {
+   "id": "teatre-faller-sonata-per-a-renato-lobra-de-placa-despanya-ramon-y-cajal-pintor-benedito",
+   "comision": "Plaça d’Espanya-Ramón y Cajal-Pintor Benedito",
+   "categoria": "Tercera",
+   "fecha": "2026-10-27",
+   "hora": "21:30",
+   "obra": "Sonata per a renato",
+   "inedita": false,
+   "autor": "Joan Tudela Cloquell",
+   "direccion": "Jose Juste García",
+   "reparto": [
+    {
+     "p": "Renato",
+     "a": "Pablo Garcia Vivó",
+     "n": false
+    },
+    {
+     "p": "Concha",
+     "a": "Naomi Caparros I Del Rio",
+     "n": false
+    },
+    {
+     "p": "Arturo",
+     "a": "Luis García Valero",
+     "n": false
+    },
+    {
+     "p": "Carmela",
+     "a": "Ana María Vivó Domingo",
+     "n": false
+    },
+    {
+     "p": "Virtudes",
+     "a": "Vega Calvo Caparrós",
+     "n": false
+    },
+    {
+     "p": "Marcial",
+     "a": "Néstor Ayose Ruano Folch",
+     "n": true
+    },
+    {
+     "p": "Noelia",
+     "a": "Lucía Ribes Gómez",
+     "n": false
+    }
+   ],
+   "actores": 7,
+   "novells": 1,
+   "duracion": 53,
+   "asistentes": 70,
+   "publicado": "2026-10-28",
+   "url": "https://fallas.com/va/teatre-faller-sonata-per-a-renato-lobra-de-placa-despanya-ramon-y-cajal-pintor-benedito/"
   }
  ]
 }
