@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-11-08T14:19:10Z",
+  "ultimaRevision": "2026-11-09T17:32:24Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -20,7 +20,11 @@
    "bases-del-concurs-literari-2027",
    "comenca-la-xxix-edicio-de-balls-al-carrer",
    "segona-jornada-de-la-xl-edicio-de-playbacks-infantils",
-   "beatriz-i-julia-visiten-el-palau-de-la-generalitat-valenciana"
+   "beatriz-i-julia-visiten-el-palau-de-la-generalitat-valenciana",
+   "quarta-jornada-del-xli-concurs-de-playbacks",
+   "sederia-tradicional-valenciana-presenta-les-teles-que-lluira-la-cort-dhonor-de-la-fallera-major-infantil-de-valencia",
+   "tercera-jornada-del-xli-concurs-de-playbacks-a-la-sala-canal",
+   "les-falleres-majors-trien-les-mantellines-oficials"
   ]
  },
  "obras": [
@@ -1623,6 +1627,153 @@
    "asistentes": 70,
    "publicado": "2026-10-28",
    "url": "https://fallas.com/va/teatre-faller-sonata-per-a-renato-lobra-de-placa-despanya-ramon-y-cajal-pintor-benedito/"
+  },
+  {
+   "id": "teatre-faller-matar-el-rei-lobra-de-maria-benlliure-sequia-de-tormos",
+   "comision": "Marià Benlliure-Séquia de Tormos",
+   "categoria": "Segona",
+   "fecha": "2026-11-04",
+   "hora": "21:30",
+   "obra": "Matar el rei",
+   "inedita": false,
+   "autor": "Chema Cerdeña",
+   "direccion": "José Pérez Arnal",
+   "reparto": [
+    {
+     "p": "Iacob",
+     "a": "Perez Arnal, Jose",
+     "n": false
+    },
+    {
+     "p": "Joana",
+     "a": "Ramada Dolz, Sonia",
+     "n": false
+    },
+    {
+     "p": "Isabel",
+     "a": "Segui Ramada, Silvia",
+     "n": false
+    },
+    {
+     "p": "Beltran",
+     "a": "Gomez Soler, Andres",
+     "n": false
+    },
+    {
+     "p": "Rei",
+     "a": "Segui Melero, Fernando",
+     "n": false
+    }
+   ],
+   "actores": 5,
+   "novells": 0,
+   "duracion": 71,
+   "asistentes": 78,
+   "publicado": "2026-11-05",
+   "url": "https://fallas.com/va/teatre-faller-matar-el-rei-lobra-de-maria-benlliure-sequia-de-tormos/"
+  },
+  {
+   "id": "teatre-faller-turis-mec-lobra-de-quart-palomar",
+   "comision": "Quart-Palomar",
+   "categoria": "Segona",
+   "fecha": "2026-11-03",
+   "hora": "21:30",
+   "obra": "Turis-mec",
+   "inedita": true,
+   "autor": "Teresa Broseta",
+   "direccion": "Teresa Broseta i Amparo Broseta",
+   "reparto": [
+    {
+     "p": "Isabel",
+     "a": "Broseta Fandos, Mªteresa",
+     "n": false
+    },
+    {
+     "p": "Elena",
+     "a": "Broseta Fandos, Amparo",
+     "n": false
+    },
+    {
+     "p": "Sofía",
+     "a": "Martin-Villalba Broseta, Amparo",
+     "n": false
+    },
+    {
+     "p": "Albert",
+     "a": "Belles Broseta, Miguel",
+     "n": false
+    },
+    {
+     "p": "Blanca",
+     "a": "Lafuente Bolufer, Mª José",
+     "n": false
+    },
+    {
+     "p": "Ferran",
+     "a": "Martínez Tortosa, Miguel Angel",
+     "n": false
+    },
+    {
+     "p": "Jaume",
+     "a": "Marin Escobedo, Pablo",
+     "n": false
+    },
+    {
+     "p": "Victòria",
+     "a": "Mateu López, Natalia",
+     "n": false
+    }
+   ],
+   "actores": 8,
+   "novells": 0,
+   "duracion": 60,
+   "asistentes": 138,
+   "publicado": "2026-11-04",
+   "url": "https://fallas.com/va/teatre-faller-turis-mec-lobra-de-quart-palomar/"
+  },
+  {
+   "id": "teatre-faller-florit-pensil-lobra-de-av-giorgeta-rois-de-corella",
+   "comision": "Av. Giorgeta-Roís de Corella",
+   "categoria": "Segona",
+   "fecha": "2026-11-02",
+   "hora": "21:30",
+   "obra": "Florit pensil",
+   "inedita": false,
+   "autor": "Andrés Sopeña",
+   "direccion": "Josep Àngel Soler Garcia-chico",
+   "reparto": [
+    {
+     "p": "Lola Briones",
+     "a": "Piqueras Nebot, Marta",
+     "n": false
+    },
+    {
+     "p": "Almudena Martí",
+     "a": "Manzanera Llorens, Ivette",
+     "n": true
+    },
+    {
+     "p": "Vicky Galván",
+     "a": "Cabo Agullo, Paula",
+     "n": false
+    },
+    {
+     "p": "Anamari Aguirre",
+     "a": "Navarro Hinojosa, Iryna",
+     "n": false
+    },
+    {
+     "p": "Paloma Castels",
+     "a": "Ibáñez Navarro, Paula",
+     "n": false
+    }
+   ],
+   "actores": 5,
+   "novells": 1,
+   "duracion": 93,
+   "asistentes": 99,
+   "publicado": "2026-11-03",
+   "url": "https://fallas.com/va/teatre-faller-florit-pensil-lobra-de-av-giorgeta-rois-de-corella/"
   }
  ]
 }
