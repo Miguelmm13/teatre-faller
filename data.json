@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-11-10T15:37:45Z",
+  "ultimaRevision": "2026-11-11T15:15:15Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -1777,6 +1777,84 @@
    "asistentes": 99,
    "publicado": "2026-11-03",
    "url": "https://fallas.com/va/teatre-faller-florit-pensil-lobra-de-av-giorgeta-rois-de-corella/"
+  },
+  {
+   "id": "teatre-faller-av-regne-de-valencia-duc-de-calabria-presenta-el-dubte",
+   "comision": "Av. Regne de València-Duc de Calàbria",
+   "categoria": "Primera",
+   "fecha": "2026-11-04",
+   "hora": "21:30",
+   "obra": "El dubte‘",
+   "inedita": false,
+   "autor": "John Patrick Shanley",
+   "direccion": "Salvador Ferriol Morales-Alcayde",
+   "reparto": [
+    {
+     "p": "Pare Flynn",
+     "a": "López Domènech, Jorge",
+     "n": false
+    },
+    {
+     "p": "Germana Aloysius",
+     "a": "Cases Bonora, Pilar",
+     "n": false
+    },
+    {
+     "p": "Germana James",
+     "a": "Guallart Noguera, Marta",
+     "n": false
+    },
+    {
+     "p": "Sra. Muller",
+     "a": "Ferraro Bonora, Virginia",
+     "n": false
+    }
+   ],
+   "actores": 4,
+   "novells": 0,
+   "duracion": 116,
+   "asistentes": 86,
+   "publicado": "2026-11-05",
+   "url": "https://fallas.com/va/teatre-faller-av-regne-de-valencia-duc-de-calabria-presenta-el-dubte/"
+  },
+  {
+   "id": "teatre-faller-arxiduc-carles-music-gomis-presenta-el-metodo-gronholm",
+   "comision": "Arxiduc Carles-Músic Gomis",
+   "categoria": "Primera",
+   "fecha": "2026-11-03",
+   "hora": null,
+   "obra": "El metodo gronholm‘",
+   "inedita": false,
+   "autor": "Jordi Galceran",
+   "direccion": "Rafael Soler Sherpa",
+   "reparto": [
+    {
+     "p": "Ferran",
+     "a": "Navarro De Tena, Eduardo",
+     "n": false
+    },
+    {
+     "p": "Mercé",
+     "a": "Ros Prats, Yolanda",
+     "n": false
+    },
+    {
+     "p": "Enric",
+     "a": "Garcia Paton, Vicente Juan",
+     "n": false
+    },
+    {
+     "p": "Carles",
+     "a": "Soler Sherpa, Rafael",
+     "n": false
+    }
+   ],
+   "actores": 4,
+   "novells": 0,
+   "duracion": 90,
+   "asistentes": 97,
+   "publicado": "2026-11-04",
+   "url": "https://fallas.com/va/teatre-faller-arxiduc-carles-music-gomis-presenta-el-metodo-gronholm/"
   }
  ]
 }
