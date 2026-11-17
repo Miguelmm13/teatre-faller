@@ -1,6 +1,6 @@
 {
  "meta": {
-  "ultimaRevision": "2026-11-16T17:03:48Z",
+  "ultimaRevision": "2026-11-17T16:54:12Z",
   "ignoradas": [
    "bases-concurse-de-presentacions",
    "ninots-indultats-infantils",
@@ -34,7 +34,12 @@
    "julia-torna-a-la-seua-falla-rosari-placa-calabuig",
    "inscripcions-del-concurs-literari",
    "creaciones-aurora-pren-mides-de-les-sabates-de-la-fmv-i-la-seua-ch",
-   "i-campionat-de-canut-de-junta-central-fallera"
+   "i-campionat-de-canut-de-junta-central-fallera",
+   "nominacions-concurs-playbacks-infantils-en-modalitat-individual-i-grup-b",
+   "picanya-exalta-a-les-seues-falleres-majors-per-a-2027",
+   "alba-vilarroig-aguilera-reina-fallera-de-borriana-2027",
+   "nou-actuacions-en-una-nova-jornada-de-playbacks-infantils",
+   "convent-de-jerusalem-ret-homenatge-a-carmen-prades-fmv-2026"
   ]
  },
  "obras": [
@@ -1862,6 +1867,114 @@
    "asistentes": 97,
    "publicado": "2026-11-04",
    "url": "https://fallas.com/va/teatre-faller-arxiduc-carles-music-gomis-presenta-el-metodo-gronholm/"
+  },
+  {
+   "id": "teatre-faller-borrull-turia-presenta-todio-amor-meu",
+   "comision": "Borrull-Turia",
+   "categoria": "Primera",
+   "fecha": "2026-11-10",
+   "hora": "21:30",
+   "obra": "T’odio amor meu",
+   "inedita": false,
+   "autor": "Juan Luis Bozzo",
+   "direccion": "Elena Cabañes",
+   "reparto": [
+    {
+     "p": "",
+     "a": "Mona Maria Isabel Sanchis Gómez",
+     "n": true
+    },
+    {
+     "p": "",
+     "a": "Sissi Berta Margarita Esparza Rico",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Lily Inmaculada Guerrero Bolinches",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Emma Carla Vañó Esteve",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Edie María Luisa Martínez Sabater",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Soldat Moisés Peñarrubia Umbert",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Paul I Anthony José Luis Gómez Piqueras",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Óscar Pau Guerrero Cabañes",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Jota Jose Albero Luján",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Barman Karlos Ros",
+     "n": false
+    }
+   ],
+   "actores": 10,
+   "novells": 1,
+   "duracion": 94,
+   "asistentes": 130,
+   "publicado": "2026-11-11",
+   "url": "https://fallas.com/va/teatre-faller-borrull-turia-presenta-todio-amor-meu/"
+  },
+  {
+   "id": "teatre-faller-cadis-denia-presenta-lentusiasme",
+   "comision": "Cadis-Dénia",
+   "categoria": "Primera",
+   "fecha": "2026-11-02",
+   "hora": "21:30",
+   "obra": "L’entusiasme",
+   "inedita": false,
+   "autor": "Pablo Remón",
+   "direccion": "Natalia Dutor Santonja",
+   "reparto": [
+    {
+     "p": "",
+     "a": "Toni y Narrador Enrique Chisbert Cuenca",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Chico, Adrián, Entrevistador, Psicologo, Narrador y Gabriel Ángel Sanchis Santisteban",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Chica, Maya, Florista, Ana, Entrevistadora, Periodista, Marta y Narradora Paqui Revert Asensi",
+     "n": false
+    },
+    {
+     "p": "",
+     "a": "Olivia, Narradora y Conductora Natalia Dutor Santonja",
+     "n": false
+    }
+   ],
+   "actores": 4,
+   "novells": 0,
+   "duracion": 102,
+   "asistentes": 83,
+   "publicado": "2026-11-03",
+   "url": "https://fallas.com/va/teatre-faller-cadis-denia-presenta-lentusiasme/"
   }
  ]
 }
